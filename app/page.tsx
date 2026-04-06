@@ -1,0 +1,47 @@
+import ScrollAnimator from '@/components/ScrollAnimator'
+import WebinarNav from '@/components/webinar/WebinarNav'
+import WebinarHero from '@/components/webinar/WebinarHero'
+import WebinarMarquee from '@/components/webinar/WebinarMarquee'
+import GettingAhead from '@/components/webinar/GettingAhead'
+import WhatYouLearn from '@/components/webinar/WhatYouLearn'
+import AcademicVsAccelerator from '@/components/webinar/AcademicVsAccelerator'
+import WebinarComparison from '@/components/webinar/WebinarComparison'
+import ConfidenceBanner from '@/components/webinar/ConfidenceBanner'
+import DruckerQuote from '@/components/webinar/DruckerQuote'
+import PhotoCarousel from '@/components/PhotoCarousel'
+import WebinarWhoFor from '@/components/webinar/WebinarWhoFor'
+import WebinarAbout from '@/components/webinar/WebinarAbout'
+import WorkshopCarousel from '@/components/WorkshopCarousel'
+import WhatYoullGet from '@/components/webinar/WhatYoullGet'
+import RegistrationCTA from '@/components/webinar/RegistrationCTA'
+import WebinarFAQ from '@/components/webinar/WebinarFAQ'
+import Disclaimer from '@/components/webinar/Disclaimer'
+import WebinarFooter from '@/components/webinar/WebinarFooter'
+import BackToTop from '@/components/BackToTop'
+
+export default function Home() {
+  return (
+    <>
+      <ScrollAnimator />
+      <WebinarNav />
+      <WebinarHero />
+      <WebinarMarquee />
+      <GettingAhead />
+      <WhatYouLearn />
+      <AcademicVsAccelerator />
+      <WebinarComparison />
+      <ConfidenceBanner />
+      <DruckerQuote />
+      <PhotoCarousel />
+      <WebinarWhoFor />
+      <WebinarAbout />
+      <WorkshopCarousel />
+      <WhatYoullGet />
+      <RegistrationCTA />
+      <WebinarFAQ />
+      <Disclaimer />
+      <WebinarFooter />
+      <BackToTop />
+    </>
+  )
+}
