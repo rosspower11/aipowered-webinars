@@ -6,7 +6,6 @@ import GettingAhead from '@/components/webinar/GettingAhead'
 import WhatYouLearn from '@/components/webinar/WhatYouLearn'
 import AcademicVsAccelerator from '@/components/webinar/AcademicVsAccelerator'
 import WebinarComparison from '@/components/webinar/WebinarComparison'
-import ConfidenceBanner from '@/components/webinar/ConfidenceBanner'
 import DruckerQuote from '@/components/webinar/DruckerQuote'
 import PhotoCarousel from '@/components/PhotoCarousel'
 import WebinarWhoFor from '@/components/webinar/WebinarWhoFor'
@@ -30,7 +29,6 @@ export default function Home() {
       <WhatYouLearn />
       <AcademicVsAccelerator />
       <WebinarComparison />
-      <ConfidenceBanner />
       <DruckerQuote />
       <PhotoCarousel />
       <WebinarWhoFor />
