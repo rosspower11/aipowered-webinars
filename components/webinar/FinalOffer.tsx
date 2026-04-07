@@ -5,16 +5,16 @@ export default function FinalOffer() {
     <section className="final-offer" id="register">
       <div className="container-narrow">
         <div className="final-offer-panel anim">
-          <p className="final-offer-eyebrow">Your ClaudeOS starts here</p>
-          <h2>Build your personal AI operating system in 6 weeks when you join the ClaudeOS accelerator</h2>
+          <p className="final-offer-eyebrow">Your journey starts here</p>
+          <h2>Understand the building blocks of Claude and start your journey in just 60 minutes</h2>
           <div className="final-offer-bullets">
             <div className="final-offer-bullet">
               <h4>Immediate clarity</h4>
-              <p>Walk into the webinar confused about AI. Walk out with the complete 5C framework, a self-assessment, and a concrete action plan you can use Monday morning.</p>
+              <p>Walk in unsure about AI. Walk out with the complete 5C framework, a self-assessment, and a concrete action plan you can use Monday morning.</p>
             </div>
             <div className="final-offer-bullet">
-              <h4>Startup-speed learning</h4>
-              <p>Modelled on the accelerator methodology from Y Combinator and Techstars. You learn by building, not watching. Every session produces something real.</p>
+              <h4>Learn by doing</h4>
+              <p>Watch a real skill get built live. Understand how the building blocks of Claude connect into a system. Leave knowing exactly how to start.</p>
             </div>
             <div className="final-offer-bullet">
               <h4>Works for anyone</h4>
