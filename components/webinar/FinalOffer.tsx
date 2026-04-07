@@ -2,7 +2,7 @@ import Script from 'next/script'
 
 export default function FinalOffer() {
   return (
-    <section className="final-offer" id="register">
+    <section className="final-offer">
       <div className="container-narrow">
         <div className="final-offer-panel anim">
           <p className="final-offer-eyebrow">Your journey starts here</p>
@@ -21,27 +21,31 @@ export default function FinalOffer() {
               <p>Personal trainers, Big 4 managing directors, political advisors, students, coaches, founders. The framework flexes to you and your mission. No code required.</p>
             </div>
           </div>
-          <div className="webinar-form-wrap" style={{ marginTop: '40px' }}>
-            <iframe
-              src="https://links.productizeyourself.ai/widget/form/ZjEhdNNknUgy1WOuEnPe"
-              style={{ width: '100%', height: '100%', border: 'none', borderRadius: '4px' }}
-              id="inline-ZjEhdNNknUgy1WOuEnPe"
-              data-layout="{'id':'INLINE'}"
-              data-trigger-type="alwaysShow"
-              data-trigger-value=""
-              data-activation-type="alwaysActivated"
-              data-activation-value=""
-              data-deactivation-type="neverDeactivate"
-              data-deactivation-value=""
-              data-form-name="[301.01] Webinar - Claude Cohort"
-              data-height="675"
-              data-layout-iframe-id="inline-ZjEhdNNknUgy1WOuEnPe"
-              data-form-id="ZjEhdNNknUgy1WOuEnPe"
-              title="[301.01] Webinar - Claude Cohort"
-            />
-          </div>
-          <p className="final-offer-note">Free. 60 minutes. No commitment beyond showing up.</p>
         </div>
+      </div>
+      <div className="container-narrow" id="register" style={{ marginTop: '48px' }}>
+        <div className="webinar-form-wrap">
+          <iframe
+            src="https://links.productizeyourself.ai/widget/form/ZjEhdNNknUgy1WOuEnPe"
+            style={{ width: '100%', height: '100%', border: 'none', borderRadius: '4px' }}
+            id="inline-ZjEhdNNknUgy1WOuEnPe"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="[301.01] Webinar - Claude Cohort"
+            data-height="675"
+            data-layout-iframe-id="inline-ZjEhdNNknUgy1WOuEnPe"
+            data-form-id="ZjEhdNNknUgy1WOuEnPe"
+            title="[301.01] Webinar - Claude Cohort"
+          />
+        </div>
+        <p style={{ textAlign: 'center', marginTop: '16px', fontSize: '13px', color: 'rgba(255,255,255,0.35)', fontStyle: 'italic' }}>
+          Free. 60 minutes. No commitment beyond showing up.
+        </p>
       </div>
       {/* Popup form triggered on 25% scroll */}
       <iframe
