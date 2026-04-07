@@ -4,16 +4,18 @@ import WebinarHero from '@/components/webinar/WebinarHero'
 import WebinarMarquee from '@/components/webinar/WebinarMarquee'
 import GettingAhead from '@/components/webinar/GettingAhead'
 import WhatYouLearn from '@/components/webinar/WhatYouLearn'
+import PhotoCarousel from '@/components/PhotoCarousel'
+import WebinarAbout from '@/components/webinar/WebinarAbout'
 import AcademicVsAccelerator from '@/components/webinar/AcademicVsAccelerator'
 import WebinarComparison from '@/components/webinar/WebinarComparison'
 import DruckerQuote from '@/components/webinar/DruckerQuote'
-import PhotoCarousel from '@/components/PhotoCarousel'
 import WebinarWhoFor from '@/components/webinar/WebinarWhoFor'
-import WebinarAbout from '@/components/webinar/WebinarAbout'
 import WorkshopCarousel from '@/components/WorkshopCarousel'
 import WhatYoullGet from '@/components/webinar/WhatYoullGet'
 import RegistrationCTA from '@/components/webinar/RegistrationCTA'
 import WebinarFAQ from '@/components/webinar/WebinarFAQ'
+import Testimonials from '@/components/webinar/Testimonials'
+import BottomCTA from '@/components/webinar/BottomCTA'
 import Disclaimer from '@/components/webinar/Disclaimer'
 import WebinarFooter from '@/components/webinar/WebinarFooter'
 import BackToTop from '@/components/BackToTop'
@@ -37,6 +39,8 @@ export default function Home() {
       <WhatYoullGet />
       <RegistrationCTA />
       <WebinarFAQ />
+      <Testimonials />
+      <BottomCTA />
       <Disclaimer />
       <WebinarFooter />
       <BackToTop />

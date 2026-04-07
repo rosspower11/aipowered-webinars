@@ -199,6 +199,11 @@ footer em{font-style:italic;}
 .ahead-detail{font-size:14px;color:var(--text-grey);line-height:1.6;}
 .ahead-bottom{font-family:var(--serif);font-size:20px;color:var(--white);text-align:center;margin-top:48px;line-height:1.5;font-weight:600;letter-spacing:-0.3px;}
 
+/* ─── TESTIMONIALS (screenshot grid) ─── */
+.testimonials{background:var(--bg-black);padding:100px 48px;}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.testimonial-img{border:1px solid var(--border-dark);border-radius:4px;overflow:hidden;background:var(--bg-charcoal);}
+
 /* ─── RESPONSIVE ─── */
 @media(max-width:1024px){
   .about-layout{grid-template-columns:1fr 1.2fr;gap:40px;}
@@ -263,6 +268,8 @@ footer em{font-style:italic;}
   .webinar-register{padding:64px 24px;}
   .webinar-form-wrap{height:720px;}
   .webinar-disclaimer{padding:24px 20px;}
+  .testimonials{padding:64px 24px;}
+  .testimonials-grid{grid-template-columns:repeat(2,1fr);gap:12px;}
 }
 
 @media(max-width:480px){
@@ -281,4 +288,5 @@ footer em{font-style:italic;}
   .webinar-hero h1{font-size:clamp(26px,7vw,36px);}
   .webinar-learn-card{padding:24px 20px;}
   .webinar-academic-card{padding:28px 20px;}
+  .testimonials-grid{grid-template-columns:1fr;gap:12px;}
 }

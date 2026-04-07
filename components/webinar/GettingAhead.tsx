@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-function AnimatedNumber({ target, suffix = '', duration = 2000 }: { target: number; suffix?: string; duration?: number }) {
+function AnimatedNumber({ target, suffix = '', prefix = '', duration = 2000 }: { target: number; suffix?: string; prefix?: string; duration?: number }) {
   const [count, setCount] = useState(0)
   const [started, setStarted] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
@@ -38,29 +38,8 @@ function AnimatedNumber({ target, suffix = '', duration = 2000 }: { target: numb
     return () => clearInterval(timer)
   }, [started, target, duration])
 
-  return <div ref={ref} className="ahead-number">{count.toLocaleString()}{suffix}</div>
+  return <div ref={ref} className="ahead-number">{prefix}{count.toLocaleString()}{suffix}</div>
 }
-
-const stats = [
-  {
-    number: 19,
-    suffix: 'M+',
-    label: 'Monthly Claude users',
-    detail: 'One of the fastest-growing AI platforms in the world',
-  },
-  {
-    number: 70,
-    suffix: '%',
-    label: 'Fortune 100 use Claude',
-    detail: 'The biggest companies are already building on it',
-  },
-  {
-    number: 1,
-    suffix: '%',
-    label: 'Have built a system',
-    detail: 'Fewer than 1 in 100 users have turned Claude into something that actually works for them',
-  },
-]
 
 export default function GettingAhead() {
   return (
@@ -77,13 +56,21 @@ export default function GettingAhead() {
           This webinar shows you the difference.
         </p>
         <div className="ahead-grid">
-          {stats.map((s, i) => (
-            <div key={i} className={`ahead-card anim d${i + 2}`}>
-              <AnimatedNumber target={s.number} suffix={s.suffix} />
-              <div className="ahead-label">{s.label}</div>
-              <p className="ahead-detail">{s.detail}</p>
-            </div>
-          ))}
+          <div className="ahead-card anim d2">
+            <AnimatedNumber target={19} suffix="M+" />
+            <div className="ahead-label">Monthly Claude users</div>
+            <p className="ahead-detail">One of the fastest-growing AI platforms in the world</p>
+          </div>
+          <div className="ahead-card anim d3">
+            <AnimatedNumber target={70} suffix="%" />
+            <div className="ahead-label">Fortune 100 use Claude</div>
+            <p className="ahead-detail">The biggest companies are already building on it</p>
+          </div>
+          <div className="ahead-card anim d4">
+            <div className="ahead-number">0.01%</div>
+            <div className="ahead-label">Have built a system</div>
+            <p className="ahead-detail">1 in 10,000 users have turned Claude into something that actually works for them</p>
+          </div>
         </div>
         <div style={{ textAlign: 'center', marginTop: '48px' }} className="anim d4">
           <a href="#register" className="btn-white">Claim your spot &middot; 23 April, 5pm UK</a>

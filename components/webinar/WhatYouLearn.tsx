@@ -1,6 +1,6 @@
 const items = [
   {
-    title: 'The personal OS framework',
+    title: 'The personal ClaudeOS framework',
     desc: "You'll see the complete system, end to end. Not a teaser. The actual framework, so you understand what's possible and where you currently sit.",
   },
   {
@@ -17,7 +17,7 @@ const items = [
   },
   {
     title: 'The accelerator roadmap',
-    desc: "If you want to build this yourself, you'll know what to learn and in what order. If you want guidance, you'll know exactly what the 6-week programme delivers.",
+    desc: "This is action-oriented. It's not view only. You learn through action. You'll understand how fast-paced accelerators and people building the future actually do things.",
   },
   {
     title: 'A clear next step',

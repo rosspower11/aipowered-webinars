@@ -15,13 +15,13 @@ export default function WebinarAbout() {
           <p className="about-eyebrow anim">Your host</p>
           <h2 className="white anim d1">Meet Ross Power</h2>
           <p className="anim d2">
-            Ross spent a decade building and leading product teams. 3 years at Accenture across complex projects, training as a Scrum Master and Product Manager. He then moved into startups, leading product and engineering teams in blockchain implementation, facilitating design sprints for C-Suite executives and then Head of Product at a NYSE publicly listed education company.
+            Ross spent a decade building and leading product teams. 3 years at <strong>Accenture</strong> across complex projects, training as a Scrum Master and Product Manager. He then moved into startups, leading product and engineering teams in <strong>blockchain implementation</strong>, facilitating design sprints for C-Suite executives and then <strong>Head of Product</strong> at a <strong>NYSE listed company</strong>.
           </p>
           <p className="anim d2">
-            Having spent a year training over 300 people in AI education, Ross now brings both together in an entirely new way. He works exclusively with Claude by Anthropic because it is the most capable AI platform for building real business systems. Using Claude as the host, he built the Claude personal OS framework from AI Powered.
+            Having spent a year training over 300 people in AI education, Ross now brings both together in an entirely new way. He works exclusively with Claude by Anthropic because it is the most capable AI platform for building real business systems. Using Claude as the host, he built the <strong>personal ClaudeOS</strong> framework from AI Powered.
           </p>
           <p className="anim d3">
-            This webinar is where Ross walks you through the complete framework, builds a skill live, and gives you a clear picture of what a personal OS looks like and how to start building yours. Cohort 1 of the accelerator includes founders, VPs, and leaders across private equity, venture capital, events, coaching, and finance.
+            This webinar is where Ross walks you through the complete framework, builds a skill live, and gives you a clear picture of what a personal OS looks like and how to start building yours. Cohort 1 of the accelerator includes personal trainers, coaches, a top 4 accounting firm managing director, government advisors, students, and digital marketers. The power is in the framework. Ross designs it in a way that flexes to the person and their mission.
           </p>
           <div className="about-stats anim d3">
             <div className="about-stat">
