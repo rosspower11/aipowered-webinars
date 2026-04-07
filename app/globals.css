@@ -59,6 +59,8 @@ h3{font-size:20px;font-weight:700;letter-spacing:-0.3px;margin-bottom:10px;}
 .hero-supporting{margin-top:14px;font-size:13px;color:var(--text-muted);font-style:italic;}
 .btn-white{display:inline-block;padding:18px 48px;background:var(--white);color:var(--bg-black);font-weight:700;font-size:13px;text-decoration:none;letter-spacing:1.5px;text-transform:uppercase;transition:all 0.3s;}
 .btn-white:hover{background:var(--off-white);}
+.btn-dark{display:inline-block;padding:18px 48px;background:var(--text-black);color:var(--white);font-weight:700;font-size:13px;text-decoration:none;letter-spacing:1.5px;text-transform:uppercase;transition:all 0.3s;}
+.btn-dark:hover{background:#333;}
 
 /* ─── MARQUEE ─── */
 .marquee{padding:24px 0;border-top:1px solid var(--border-dark);border-bottom:1px solid var(--border-dark);overflow:hidden;background:var(--bg-charcoal);}
@@ -141,6 +143,10 @@ footer em{font-style:italic;}
 .webinar-hero-inner{max-width:800px;}
 .webinar-hero h1{font-family:var(--serif);font-size:clamp(36px,5vw,64px);font-weight:700;line-height:1.1;letter-spacing:-2px;color:var(--white);margin-bottom:24px;}
 .webinar-hero-sub{font-size:18px;color:var(--text-grey);line-height:1.7;max-width:600px;margin:0 auto 40px;}
+.webinar-hero-proof{display:flex;align-items:center;gap:16px;max-width:520px;margin:0 auto 40px;text-align:left;padding:20px 24px;background:rgba(255,255,255,0.04);border:1px solid var(--border-dark);border-radius:8px;}
+.webinar-hero-avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;}
+.webinar-hero-proof p{font-size:14px;color:var(--text-grey);line-height:1.5;margin:0;}
+.webinar-hero-proof strong{color:var(--white);}
 
 /* ─── WEBINAR LEARN (6 items grid) ─── */
 .webinar-learn{background:var(--bg-charcoal);padding:100px 48px;}

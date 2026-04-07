@@ -1,13 +1,13 @@
 const items = [
-  'Build Your Personal OS',
+  '23 April · 5pm UK',
   '·',
-  'Live Skill Build',
+  'Free 60-minute webinar',
   '·',
-  'The 5C Framework',
+  'Live skill build',
+  '·',
+  'The 5C framework',
   '·',
   'Chat · Create · Connect · Customise · Command',
-  '·',
-  'Free 60-Minute Webinar',
   '·',
 ]
 

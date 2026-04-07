@@ -1,27 +1,27 @@
 const items = [
   {
-    title: 'The Personal OS Framework',
-    desc: "See the complete 5C system that turns Claude from a chatbot into a business operating system. Not a teaser — the actual framework, end to end, so you understand exactly what's possible and where you currently sit.",
+    title: 'The personal OS framework',
+    desc: "You'll see the complete system, end to end. Not a teaser. The actual framework, so you understand what's possible and where you currently sit.",
   },
   {
-    title: 'A Live Skill Build',
-    desc: 'Watch a Skill get built from scratch in real time. You\'ll see how a single Skill can standardise an output you currently do manually — and how that Skill becomes a permanent, reusable part of your OS.',
+    title: 'A live skill build',
+    desc: "Watch a skill get built from scratch in real time. You'll see how one skill can replace a manual process you do every week.",
   },
   {
-    title: 'The Three Pillars Assessment',
-    desc: 'Walk away knowing exactly where you are across Standardisation, Optimisation, and Personalisation. Most people score high on one and zero on the other two. This is the gap the Accelerator closes.',
+    title: 'The three pillars assessment',
+    desc: "Find out exactly where you are across standardisation, optimisation, and personalisation. Most people score high on one and zero on the other two.",
   },
   {
-    title: 'The "CHAT vs OS" Mindset Shift',
-    desc: 'The single biggest unlock: understanding the difference between using Claude as a tool and running Claude as a system. This reframe alone will change how you approach every interaction with AI.',
+    title: 'The mindset shift that changes everything',
+    desc: "The difference between using Claude as a tool and running it as a system. This reframe alone will change how you approach AI from this point forward.",
   },
   {
-    title: 'The Accelerator Roadmap',
-    desc: "If you want to build this yourself, you'll know exactly what to learn and in what order. If you want it built with guidance, you'll know exactly what the 6-week Accelerator delivers.",
+    title: 'The accelerator roadmap',
+    desc: "If you want to build this yourself, you'll know what to learn and in what order. If you want guidance, you'll know exactly what the 6-week programme delivers.",
   },
   {
-    title: 'A Clear Next Step',
-    desc: "Whether you go solo or join the Accelerator, you'll leave with a concrete action plan — not vague inspiration. You'll know exactly what to do on Monday morning.",
+    title: 'A clear next step',
+    desc: "You'll leave with a concrete action plan. Not vague inspiration. You'll know exactly what to do on Monday morning.",
   },
 ]
 
@@ -29,11 +29,11 @@ export default function WhatYouLearn() {
   return (
     <section className="webinar-learn">
       <div className="container">
-        <p className="eyebrow anim">What You Get From 60 Minutes</p>
-        <h2 className="white anim d1">This Isn't a Teaser. It's a Transfer.</h2>
+        <p className="eyebrow anim">What you get from 60 minutes</p>
+        <h2 className="white anim d1">This isn't a teaser. It's a transfer.</h2>
         <p className="sub sub-grey anim d2">
           Most webinars give you just enough to feel excited and not enough to do anything.
-          This one delivers the full framework, a live build, and a self-assessment you can use immediately.
+          This one gives you the full framework, a live build, and something you can use straight away.
         </p>
         <div className="webinar-learn-grid">
           {items.map((item, i) => (
@@ -45,6 +45,9 @@ export default function WhatYouLearn() {
               </div>
             </div>
           ))}
+        </div>
+        <div style={{ textAlign: 'center', marginTop: '48px' }} className="anim d4">
+          <a href="#register" className="btn-white">Claim your spot &middot; 23 April, 5pm UK</a>
         </div>
       </div>
     </section>

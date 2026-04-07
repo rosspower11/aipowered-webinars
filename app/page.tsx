@@ -27,12 +27,12 @@ export default function Home() {
       <WebinarMarquee />
       <GettingAhead />
       <WhatYouLearn />
+      <PhotoCarousel />
+      <WebinarAbout />
       <AcademicVsAccelerator />
       <WebinarComparison />
       <DruckerQuote />
-      <PhotoCarousel />
       <WebinarWhoFor />
-      <WebinarAbout />
       <WorkshopCarousel />
       <WhatYoullGet />
       <RegistrationCTA />

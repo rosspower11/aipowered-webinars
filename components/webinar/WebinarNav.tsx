@@ -5,7 +5,7 @@ export default function WebinarNav() {
         AI POWERED <span>/ CLAUDE OS</span>
       </div>
       <div className="nav-actions">
-        <a href="#register" className="nav-cta">Register Now</a>
+        <a href="#register" className="nav-cta">Claim your spot &middot; 23 April</a>
       </div>
     </nav>
   )

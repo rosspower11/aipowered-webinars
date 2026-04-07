@@ -45,20 +45,20 @@ const stats = [
   {
     number: 19,
     suffix: 'M+',
-    label: 'Monthly Claude Users',
-    detail: 'Claude is one of the fastest-growing AI platforms in the world',
+    label: 'Monthly Claude users',
+    detail: 'One of the fastest-growing AI platforms in the world',
   },
   {
     number: 70,
     suffix: '%',
-    label: 'Fortune 100 Use Claude',
-    detail: 'The biggest companies in the world are already building on it',
+    label: 'Fortune 100 use Claude',
+    detail: 'The biggest companies are already building on it',
   },
   {
     number: 1,
     suffix: '%',
-    label: 'Have Built a Personal OS',
-    detail: 'Fewer than 1 in 100 users have turned Claude into a system',
+    label: 'Have built a system',
+    detail: 'Fewer than 1 in 100 users have turned Claude into something that actually works for them',
   },
 ]
 
@@ -66,15 +66,15 @@ export default function GettingAhead() {
   return (
     <section className="ahead-section">
       <div className="container">
-        <p className="eyebrow eyebrow-accent anim">The Opportunity</p>
-        <h2 className="white anim d1">You Feel Behind. You're Not.<br />Almost Nobody Knows How to Use This Yet.</h2>
+        <p className="eyebrow eyebrow-accent anim">The opportunity</p>
+        <h2 className="white anim d1">You feel behind. You're not.<br />Almost nobody knows how to use this yet.</h2>
         <p className="sub sub-grey anim d2" style={{ maxWidth: '700px', marginBottom: '16px' }}>
-          Claude is going crazy. New features every week. Agentic capabilities. Tool use. Projects. Memory.
-          And yet the vast majority of users are still typing questions into a chat box and calling it a day.
+          Claude is moving fast. New features every week. And yet most people are still typing questions
+          into a chat box, getting a mediocre answer, and saying "AI isn't that useful."
         </p>
         <p className="sub sub-grey anim d2" style={{ maxWidth: '700px', marginBottom: '64px' }}>
-          The gap between people who use AI casually and people who have built systems on it is widening every week.
-          Getting ahead is not as hard as you think. This webinar shows you how.
+          The reality? The tool isn't the problem. The approach is.
+          This webinar shows you the difference.
         </p>
         <div className="ahead-grid">
           {stats.map((s, i) => (
@@ -85,9 +85,9 @@ export default function GettingAhead() {
             </div>
           ))}
         </div>
-        <p className="ahead-bottom anim d4">
-          This webinar shows you how to be in the 1% who have actually built something that compounds.
-        </p>
+        <div style={{ textAlign: 'center', marginTop: '48px' }} className="anim d4">
+          <a href="#register" className="btn-white">Claim your spot &middot; 23 April, 5pm UK</a>
+        </div>
       </div>
     </section>
   )
