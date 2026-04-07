@@ -37,7 +37,7 @@ export default function FinalOffer() {
             data-deactivation-type="neverDeactivate"
             data-deactivation-value=""
             data-form-name="[301.01] Webinar - Claude Cohort"
-            data-height="675"
+            data-height="1400"
             data-layout-iframe-id="inline-ZjEhdNNknUgy1WOuEnPe"
             data-form-id="ZjEhdNNknUgy1WOuEnPe"
             title="[301.01] Webinar - Claude Cohort"
