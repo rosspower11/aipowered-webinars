@@ -179,7 +179,7 @@ footer em{font-style:italic;}
 
 /* ─── WEBINAR REGISTER (CTA with form) ─── */
 .webinar-register{padding:120px 48px;background:var(--bg-charcoal);text-align:center;}
-.webinar-form-wrap{max-width:600px;margin:0 auto;height:675px;background:var(--bg-dark);border:1px solid var(--border-dark);border-radius:4px;overflow:hidden;}
+.webinar-form-wrap{max-width:600px;margin:0 auto;min-height:675px;height:1100px;background:var(--bg-dark);border:1px solid var(--border-dark);border-radius:4px;}
 
 /* ─── WEBINAR DISCLAIMER ─── */
 .webinar-disclaimer{padding:32px 48px;background:var(--bg-black);border-top:1px solid var(--border-dark);}
@@ -279,7 +279,7 @@ footer em{font-style:italic;}
   .webinar-academic-bottom{font-size:16px;margin-top:36px;}
   .webinar-quote{padding:56px 24px;}
   .webinar-register{padding:64px 24px;}
-  .webinar-form-wrap{height:720px;}
+  .webinar-form-wrap{height:1200px;}
   .webinar-disclaimer{padding:24px 20px;}
   .testimonials{padding:64px 24px;}
   .testimonials-grid{grid-template-columns:repeat(2,1fr);gap:12px;}
