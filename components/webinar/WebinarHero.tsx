@@ -22,8 +22,9 @@ export default function WebinarHero() {
             className="webinar-hero-avatar"
           />
           <p>
-            <strong>Ross Power</strong> has trained 300+ people across 6 industries.
-            Cohort 1 includes founders and VPs across private equity, venture capital, and finance.
+            <strong>Ross Power</strong> has trained 300+ people. Cohort 1 includes personal trainers,
+            Big 4 managing directors, political advisors, students, digital marketers, leadership coaches,
+            ex-corporate founders, and everything in between.
           </p>
         </div>
         <a href="#register" className="btn-white">Claim your spot &middot; 23 April, 5pm UK</a>

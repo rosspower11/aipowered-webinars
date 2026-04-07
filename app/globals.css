@@ -199,6 +199,18 @@ footer em{font-style:italic;}
 .ahead-detail{font-size:14px;color:var(--text-grey);line-height:1.6;}
 .ahead-bottom{font-family:var(--serif);font-size:20px;color:var(--white);text-align:center;margin-top:48px;line-height:1.5;font-weight:600;letter-spacing:-0.3px;}
 
+/* ─── FINAL OFFER PANEL ─── */
+.final-offer{background:var(--bg-black);padding:100px 48px;}
+.final-offer-panel{background:var(--bg-charcoal);border:1px solid var(--border-dark);padding:64px 48px;text-align:center;max-width:800px;margin:0 auto;}
+.final-offer-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:20px;font-weight:700;}
+.final-offer-panel h2{font-family:var(--serif);font-size:clamp(24px,3.5vw,36px);font-weight:700;color:var(--white);line-height:1.2;letter-spacing:-0.5px;margin-bottom:40px;}
+.final-offer-bullets{display:flex;flex-direction:column;gap:24px;text-align:left;margin-bottom:40px;}
+.final-offer-bullet{padding:20px 0;border-bottom:1px solid var(--border-dark);}
+.final-offer-bullet:last-child{border-bottom:none;}
+.final-offer-bullet h4{font-size:15px;font-weight:700;color:var(--white);margin-bottom:6px;}
+.final-offer-bullet p{font-size:14px;color:var(--text-grey);line-height:1.7;}
+.final-offer-note{margin-top:16px;font-size:13px;color:var(--text-muted);font-style:italic;}
+
 /* ─── TESTIMONIALS (screenshot grid) ─── */
 .testimonials{background:var(--bg-black);padding:100px 48px;}
 .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
@@ -270,6 +282,8 @@ footer em{font-style:italic;}
   .webinar-disclaimer{padding:24px 20px;}
   .testimonials{padding:64px 24px;}
   .testimonials-grid{grid-template-columns:repeat(2,1fr);gap:12px;}
+  .final-offer{padding:64px 24px;}
+  .final-offer-panel{padding:40px 24px;}
 }
 
 @media(max-width:480px){

@@ -30,10 +30,11 @@ export default function WhatYouLearn() {
     <section className="webinar-learn">
       <div className="container">
         <p className="eyebrow anim">What you get from 60 minutes</p>
-        <h2 className="white anim d1">This isn't a teaser. It's a transfer.</h2>
+        <h2 className="white anim d1">Startup-inspired. Action-oriented. Built to move fast.</h2>
         <p className="sub sub-grey anim d2">
-          Most webinars give you just enough to feel excited and not enough to do anything.
-          This one gives you the full framework, a live build, and something you can use straight away.
+          Inspired by the accelerator methodology from Y Combinator, Techstars and the programmes
+          that built the unicorns you know today. Reapplied to Claude and AI.
+          You don't sit and watch. You learn by doing.
         </p>
         <div className="webinar-learn-grid">
           {items.map((item, i) => (

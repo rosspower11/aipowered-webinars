@@ -12,10 +12,10 @@ import DruckerQuote from '@/components/webinar/DruckerQuote'
 import WebinarWhoFor from '@/components/webinar/WebinarWhoFor'
 import WorkshopCarousel from '@/components/WorkshopCarousel'
 import WhatYoullGet from '@/components/webinar/WhatYoullGet'
-import RegistrationCTA from '@/components/webinar/RegistrationCTA'
 import WebinarFAQ from '@/components/webinar/WebinarFAQ'
 import Testimonials from '@/components/webinar/Testimonials'
 import BottomCTA from '@/components/webinar/BottomCTA'
+import FinalOffer from '@/components/webinar/FinalOffer'
 import Disclaimer from '@/components/webinar/Disclaimer'
 import WebinarFooter from '@/components/webinar/WebinarFooter'
 import BackToTop from '@/components/BackToTop'
@@ -37,10 +37,10 @@ export default function Home() {
       <WebinarWhoFor />
       <WorkshopCarousel />
       <WhatYoullGet />
-      <RegistrationCTA />
       <WebinarFAQ />
       <Testimonials />
       <BottomCTA />
+      <FinalOffer />
       <Disclaimer />
       <WebinarFooter />
       <BackToTop />
