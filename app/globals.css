@@ -106,6 +106,7 @@ h3{font-size:20px;font-weight:700;letter-spacing:-0.3px;margin-bottom:10px;}
 .about-stat{text-align:center;}
 .about-stat-n{font-family:var(--serif);font-size:32px;font-weight:700;color:var(--white);}
 .about-stat-l{font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1.5px;font-weight:600;font-family:var(--mono);}
+.about-disclaimer{margin-top:20px;font-size:11px;color:var(--text-muted);line-height:1.6;font-style:italic;}
 
 /* ─── WHAT YOU GET (charcoal) ─── */
 .what-you-get{background:var(--bg-charcoal);padding:100px 48px;}

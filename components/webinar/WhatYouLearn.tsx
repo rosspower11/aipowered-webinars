@@ -30,11 +30,13 @@ export default function WhatYouLearn() {
     <section className="webinar-learn">
       <div className="container">
         <p className="eyebrow anim">What you get from 60 minutes</p>
-        <h2 className="white anim d1">Startup-inspired. Action-oriented. Built to move fast.</h2>
+        <h2 className="white anim d1">Startup-inspired. Action-oriented.<br />Built to move fast.</h2>
         <p className="sub sub-grey anim d2">
-          Inspired by the accelerator methodology from Y Combinator, Techstars and the programmes
-          that built the unicorns you know today. Reapplied to Claude and AI.
-          You don't sit and watch. You learn by doing.
+          This programme is inspired by the accelerator methodology from Y Combinator,
+          Techstars and the programmes that built the unicorns you know today.
+        </p>
+        <p className="sub sub-grey anim d2" style={{ marginBottom: '8px' }}>
+          Reapplied to Claude and AI. You don't sit and watch. You learn by doing.
         </p>
         <div className="webinar-learn-grid">
           {items.map((item, i) => (

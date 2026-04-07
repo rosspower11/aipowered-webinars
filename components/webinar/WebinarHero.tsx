@@ -13,7 +13,8 @@ export default function WebinarHero() {
         </h1>
         <p className="webinar-hero-sub">
           Most people ask Claude a question and move on. In 60 minutes, you'll see
-          how the top 1% have turned it into a system that actually runs their business.
+          how the top 1% have turned it into a personal operating system that actually
+          runs their business, life and accelerates their career.
         </p>
         <div className="webinar-hero-proof">
           <img
