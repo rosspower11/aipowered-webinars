@@ -24,25 +24,23 @@ export default function FinalOffer() {
         </div>
       </div>
       <div className="container-narrow" id="register" style={{ marginTop: '48px' }}>
-        <div className="webinar-form-wrap">
-          <iframe
-            src="https://links.productizeyourself.ai/widget/form/ZjEhdNNknUgy1WOuEnPe"
-            style={{ width: '100%', height: '100%', border: 'none', borderRadius: '4px' }}
-            id="inline-ZjEhdNNknUgy1WOuEnPe"
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="[301.01] Webinar - Claude Cohort"
-            data-height="1400"
-            data-layout-iframe-id="inline-ZjEhdNNknUgy1WOuEnPe"
-            data-form-id="ZjEhdNNknUgy1WOuEnPe"
-            title="[301.01] Webinar - Claude Cohort"
-          />
-        </div>
+        <iframe
+          src="https://links.productizeyourself.ai/widget/form/ZjEhdNNknUgy1WOuEnPe"
+          style={{ width: '100%', maxWidth: '600px', margin: '0 auto', display: 'block', border: 'none', borderRadius: '4px' }}
+          id="inline-ZjEhdNNknUgy1WOuEnPe"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="[301.01] Webinar - Claude Cohort"
+          data-height="675"
+          data-layout-iframe-id="inline-ZjEhdNNknUgy1WOuEnPe"
+          data-form-id="ZjEhdNNknUgy1WOuEnPe"
+          title="[301.01] Webinar - Claude Cohort"
+        />
         <p style={{ textAlign: 'center', marginTop: '16px', fontSize: '13px', color: 'rgba(255,255,255,0.35)', fontStyle: 'italic' }}>
           Free. 60 minutes. No commitment beyond showing up.
         </p>
