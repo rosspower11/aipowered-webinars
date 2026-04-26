@@ -1,11 +1,9 @@
-import Script from 'next/script'
-
 export default function FinalOffer() {
   return (
     <section className="final-offer">
       <div className="container-narrow">
         <div className="final-offer-panel anim">
-          <p className="final-offer-eyebrow">Your journey starts here</p>
+          <p className="final-offer-eyebrow">Great event last week</p>
           <h2>Understand the building blocks of Claude and start your journey in just 60 minutes</h2>
           <div className="final-offer-bullets">
             <div className="final-offer-bullet">
@@ -23,47 +21,19 @@ export default function FinalOffer() {
           </div>
         </div>
       </div>
-      <div className="container-narrow" id="register" style={{ marginTop: '48px' }}>
-        <iframe
-          src="https://links.productizeyourself.ai/widget/form/ZjEhdNNknUgy1WOuEnPe"
-          style={{ width: '100%', maxWidth: '600px', margin: '0 auto', display: 'block', border: 'none', borderRadius: '4px' }}
-          id="inline-ZjEhdNNknUgy1WOuEnPe"
-          data-layout="{'id':'INLINE'}"
-          data-trigger-type="alwaysShow"
-          data-trigger-value=""
-          data-activation-type="alwaysActivated"
-          data-activation-value=""
-          data-deactivation-type="neverDeactivate"
-          data-deactivation-value=""
-          data-form-name="[301.01] Webinar - Claude Cohort"
-          data-height="675"
-          data-layout-iframe-id="inline-ZjEhdNNknUgy1WOuEnPe"
-          data-form-id="ZjEhdNNknUgy1WOuEnPe"
-          title="[301.01] Webinar - Claude Cohort"
-        />
+      <div className="container-narrow" id="register" style={{ marginTop: '48px', textAlign: 'center' }}>
+        <a
+          href="https://replay.aipowered.xyz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-white"
+        >
+          Watch the replay
+        </a>
         <p style={{ textAlign: 'center', marginTop: '16px', fontSize: '13px', color: 'rgba(255,255,255,0.35)', fontStyle: 'italic' }}>
-          Free. 60 minutes. No commitment beyond showing up.
+          Free. 60 minutes. The full event, on demand.
         </p>
       </div>
-      {/* Popup form triggered on 25% scroll */}
-      <iframe
-        src="https://links.productizeyourself.ai/widget/form/ZjEhdNNknUgy1WOuEnPe"
-        style={{ display: 'none', width: '100%', height: '100%', border: 'none', borderRadius: '4px' }}
-        id="popup-ZjEhdNNknUgy1WOuEnPe"
-        data-layout="{'id':'POPUP'}"
-        data-trigger-type="showOnScrolling"
-        data-trigger-value="25"
-        data-activation-type="alwaysActivated"
-        data-activation-value=""
-        data-deactivation-type="neverDeactivate"
-        data-deactivation-value=""
-        data-form-name="[301.01] Webinar - Claude Cohort"
-        data-height="881"
-        data-layout-iframe-id="popup-ZjEhdNNknUgy1WOuEnPe"
-        data-form-id="ZjEhdNNknUgy1WOuEnPe"
-        title="[301.01] Webinar - Claude Cohort"
-      />
-      <Script src="https://links.productizeyourself.ai/js/form_embed.js" strategy="lazyOnload" />
     </section>
   )
 }

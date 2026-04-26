@@ -1,7 +1,7 @@
 const items = [
-  '23 April · 5pm UK',
+  'Great event last week',
   '·',
-  'Free 60-minute webinar',
+  'Watch the replay now',
   '·',
   'Live skill build',
   '·',

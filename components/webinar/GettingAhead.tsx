@@ -53,7 +53,7 @@ export default function GettingAhead() {
         </p>
         <p className="sub sub-grey anim d2" style={{ maxWidth: '700px', marginBottom: '64px' }}>
           The reality? The tool isn't the problem. The approach is.
-          This webinar shows you the difference.
+          The replay from last week's event shows you the difference.
         </p>
         <div className="ahead-grid">
           <div className="ahead-card anim d2">
@@ -73,7 +73,7 @@ export default function GettingAhead() {
           </div>
         </div>
         <div style={{ textAlign: 'center', marginTop: '48px' }} className="anim d4">
-          <a href="#register" className="btn-white">Claim your spot &middot; 23 April, 5pm UK</a>
+          <a href="https://replay.aipowered.xyz/" target="_blank" rel="noopener noreferrer" className="btn-white">Watch the replay</a>
         </div>
       </div>
     </section>

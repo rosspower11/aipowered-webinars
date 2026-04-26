@@ -17,7 +17,7 @@ const cards = [
   {
     tag: 'Career professionals',
     title: 'You want to become the AI person in your field',
-    desc: "The people who build systems on AI will have an unfair advantage in every industry. This webinar shows you the framework. The accelerator helps you build it.",
+    desc: "The people who build systems on AI will have an unfair advantage in every industry. The replay shows you the framework. The accelerator helps you build it.",
   },
 ]
 
@@ -26,7 +26,7 @@ export default function WebinarWhoFor() {
     <section className="who-section">
       <div className="container">
         <p className="eyebrow anim" style={{ color: 'var(--text-dark-grey)' }}>Who this is for</p>
-        <h2 className="dark anim d1">This webinar is for you if...</h2>
+        <h2 className="dark anim d1">This replay is for you if...</h2>
         <div className="who-grid">
           {cards.map((c, i) => (
             <div key={i} className={`who-card anim d${Math.min(i + 1, 4)}`}>
@@ -37,7 +37,7 @@ export default function WebinarWhoFor() {
           ))}
         </div>
         <div style={{ textAlign: 'center', marginTop: '48px' }} className="anim d4">
-          <a href="#register" className="btn-dark">Claim your spot &middot; 23 April, 5pm UK</a>
+          <a href="https://replay.aipowered.xyz/" target="_blank" rel="noopener noreferrer" className="btn-dark">Watch the replay</a>
         </div>
       </div>
     </section>

@@ -50,7 +50,7 @@ export default function WhatYouLearn() {
           ))}
         </div>
         <div style={{ textAlign: 'center', marginTop: '48px' }} className="anim d4">
-          <a href="#register" className="btn-white">Claim your spot &middot; 23 April, 5pm UK</a>
+          <a href="https://replay.aipowered.xyz/" target="_blank" rel="noopener noreferrer" className="btn-white">Watch the replay</a>
         </div>
       </div>
     </section>

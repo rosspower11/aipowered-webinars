@@ -33,7 +33,7 @@ export default function AcademicVsAccelerator() {
         </div>
         <p className="webinar-academic-bottom anim d4">
           The gap between casual users and people who've built systems is getting wider every week.
-          This webinar shows you which side you're on and how to cross over.
+          The replay shows you which side you're on and how to cross over.
         </p>
       </div>
     </section>

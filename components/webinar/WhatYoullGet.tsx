@@ -22,7 +22,7 @@ const takeaways = [
   {
     num: '05',
     title: 'Understand how you could be the next AI expert in your field',
-    desc: "The people who build systems on AI will have an unfair advantage in every industry. This webinar shows you the path. You don't need to code. You need to build skills.",
+    desc: "The people who build systems on AI will have an unfair advantage in every industry. The replay shows you the path. You don't need to code. You need to build skills.",
   },
 ]
 
@@ -44,7 +44,7 @@ export default function WhatYoullGet() {
           ))}
         </div>
         <div style={{ textAlign: 'center', marginTop: '48px' }} className="anim d4">
-          <a href="#register" className="btn-white">Claim your spot &middot; 23 April, 5pm UK</a>
+          <a href="https://replay.aipowered.xyz/" target="_blank" rel="noopener noreferrer" className="btn-white">Watch the replay</a>
         </div>
       </div>
     </section>

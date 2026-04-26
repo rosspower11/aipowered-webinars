@@ -21,7 +21,7 @@ export default function WebinarAbout() {
             Having trained <strong>over 300 people</strong> in AI education, Ross now brings both together in an entirely new way. He works exclusively with <strong>Claude from Anthropic</strong> because it is the most capable AI platform for building real business systems. Using Claude as the host, he built the <strong>personal ClaudeOS</strong> framework from AI Powered.
           </p>
           <p className="anim d3">
-            This <strong>webinar is the exclusive public release of the ClaudeOS from AI Powered</strong>, a new approach to learning and implementing AI with Claude. Ross walks you through the complete framework, builds a skill live, and gives you a clear picture of what a personal OS looks like and how to start building yours.
+            Last week's <strong>event was the exclusive public release of the ClaudeOS from AI Powered</strong>, a new approach to learning and implementing AI with Claude. In the replay, Ross walks you through the complete framework, builds a skill live, and gives you a clear picture of what a personal OS looks like and how to start building yours.
           </p>
           <div className="about-stats anim d3">
             <div className="about-stat">
@@ -38,7 +38,7 @@ export default function WebinarAbout() {
             </div>
           </div>
           <div style={{ marginTop: '32px' }} className="anim d4">
-            <a href="#register" className="btn-white">Claim your spot &middot; 23 April, 5pm UK</a>
+            <a href="https://replay.aipowered.xyz/" target="_blank" rel="noopener noreferrer" className="btn-white">Watch the replay</a>
           </div>
           <p className="about-disclaimer anim d4">
             Ross and AI Powered Group have no official affiliation with Claude or Anthropic. ClaudeOS is an independent framework designed by Ross Power.

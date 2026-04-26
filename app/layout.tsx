@@ -5,18 +5,18 @@ const CDN = 'https://aipowered-assets.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://webinar.aipowered.xyz'),
-  title: 'ClaudeOS Webinar | Build Your Personal AI Operating System',
-  description: 'Free 60-minute live webinar. See the exact framework that turns Claude from a chatbot into a business operating system. Live Skill build. Self-assessment. Immediate value.',
+  title: 'ClaudeOS Replay | Watch the AI Powered event from last week',
+  description: 'Great event last week. Watch the replay: the 5C framework that turns Claude from a chatbot into a business operating system, a live Skill build, and a self-assessment you can use immediately.',
   openGraph: {
-    title: 'ClaudeOS Webinar | Build Your Personal AI Operating System',
-    description: 'Free 60-minute webinar: the 5C Framework, a live Skill build, and a self-assessment you can use immediately.',
+    title: 'ClaudeOS Replay | Watch the AI Powered event from last week',
+    description: 'Great event last week. Watch the replay: the 5C framework, a live Skill build, and a self-assessment you can use immediately.',
     images: [{ url: `${CDN}/web-preview-assets/claude-team-os-social-preview.png`, width: 1200, height: 630 }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ClaudeOS Webinar | Build Your Personal AI Operating System',
-    description: 'Free 60-minute webinar: the 5C Framework, a live Skill build, and a self-assessment you can use immediately.',
+    title: 'ClaudeOS Replay | Watch the AI Powered event from last week',
+    description: 'Great event last week. Watch the replay: the 5C framework, a live Skill build, and a self-assessment you can use immediately.',
     images: [`${CDN}/web-preview-assets/claude-team-os-social-preview.png`],
   },
   icons: {

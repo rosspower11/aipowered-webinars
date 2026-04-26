@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    q: "What exactly will I learn in 60 minutes?",
-    a: "You'll see the complete 5C framework (Chat, Create, Connect, Customise, Command), watch a Claude skill get built live from scratch, and complete a self-assessment across standardisation, optimisation, and personalisation. You'll leave with a clear picture of where you are and what to do next.",
+    q: "What's in the 60-minute replay?",
+    a: "You'll see the complete 5C framework (Chat, Create, Connect, Customise, Command), watch a Claude skill get built live from scratch, and follow a self-assessment across standardisation, optimisation, and personalisation. You'll leave with a clear picture of where you are and what to do next.",
   },
   {
     q: "I've watched Claude tutorials before. How is this different?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "Can't I just figure this out myself?",
-    a: "You can. It'll take 6 to 12 months of trial and error. The webinar compresses that into a 60-minute overview. The accelerator compresses it into 6 weeks of guided builds.",
+    a: "You can. It'll take 6 to 12 months of trial and error. The replay compresses that into a 60-minute overview. The accelerator compresses it into 6 weeks of guided builds.",
   },
   {
     q: "Is this just going to pitch me the accelerator for an hour?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "What is the ClaudeOS accelerator?",
-    a: "A 6-week cohort programme where you build your personal OS from scratch using the 5C framework. It's mentioned in the webinar so you understand the full picture, but the webinar delivers standalone value whether you join or not.",
+    a: "A 6-week cohort programme where you build your personal OS from scratch using the 5C framework. It's mentioned in the replay so you understand the full picture, but the replay delivers standalone value whether you join or not.",
   },
   {
     q: "Is this only for Claude users? What about ChatGPT?",
