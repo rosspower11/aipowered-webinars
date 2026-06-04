@@ -1,17 +1,7 @@
-const items = [
-  'Great event last week',
-  '·',
-  'Watch the replay now',
-  '·',
-  'Live skill build',
-  '·',
-  'The 5C framework',
-  '·',
-  'Chat · Create · Connect · Customise · Command',
-  '·',
-]
+import { webinar } from '@/lib/webinar'
 
 export default function WebinarMarquee() {
+  const items = [...webinar.marquee]
   const doubled = [...items, ...items]
   return (
     <div className="marquee">

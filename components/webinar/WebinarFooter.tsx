@@ -1,11 +1,13 @@
+import { webinar } from '@/lib/webinar'
+
 export default function WebinarFooter() {
+  const { footer } = webinar
   return (
-    <footer>
+    <footer className="footer">
       <p>
-        AI Powered | ClaudeOS Accelerator by{' '}
-        <a href="https://aipowered.xyz">Ross Power</a>
-        {' '}&nbsp;·&nbsp;{' '}
-        <em>Stop experimenting. Start operating with AI.</em>
+        {footer.tagline} ·{' '}
+        <a href={footer.link}>Ross Power</a>
+        {' '}&middot; <em>Stop experimenting. Start operating with AI.</em>
       </p>
     </footer>
   )

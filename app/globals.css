@@ -143,7 +143,9 @@ footer em{font-style:italic;}
 .webinar-hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 48px 100px;text-align:center;background:var(--bg-black);}
 .webinar-hero-inner{max-width:800px;}
 .webinar-hero h1{font-family:var(--serif);font-size:clamp(36px,5vw,64px);font-weight:700;line-height:1.1;letter-spacing:-2px;color:var(--white);margin-bottom:24px;}
-.webinar-hero-sub{font-size:18px;color:var(--text-grey);line-height:1.7;max-width:600px;margin:0 auto 40px;}
+.webinar-hero-sub{font-size:18px;color:var(--text-grey);line-height:1.7;max-width:600px;margin:0 auto 24px;}
+.hero-date{font-size:15px;color:var(--accent);line-height:1.6;max-width:520px;margin:0 auto 32px;font-style:italic;}
+.webinar-prep .who-card{border-color:rgba(0,0,0,0.08);}
 .webinar-hero-proof{display:flex;align-items:center;gap:16px;max-width:520px;margin:0 auto 40px;text-align:left;padding:20px 24px;background:rgba(255,255,255,0.04);border:1px solid var(--border-dark);border-radius:8px;}
 .webinar-hero-avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;}
 .webinar-hero-proof p{font-size:14px;color:var(--text-grey);line-height:1.5;margin:0;}

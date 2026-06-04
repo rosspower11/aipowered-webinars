@@ -1,21 +1,27 @@
 import { getCDN } from '@/lib/cdn'
+import { webinar } from '@/lib/webinar'
+import WebinarCTA from '@/components/webinar/WebinarCTA'
 
 export default function WebinarHero() {
+  const { event, hero } = webinar
+  const datePart = event.dateLine ? ` · ${event.dateLine}` : ''
   return (
     <section className="webinar-hero">
       <div className="webinar-hero-inner anim">
-        <p className="hero-eyebrow">Great event last week &middot; Watch the replay</p>
-        <h1>
-          Claude can give you<br />
-          more freedom, speed,<br />
-          and clarity. So why are<br />
-          you using it like ChatGPT?
-        </h1>
-        <p className="webinar-hero-sub">
-          We had a great event last week. In 60 minutes, you'll see how the top 1%
-          have turned Claude into a personal operating system that actually runs
-          their business, life and accelerates their career. Catch the full replay below.
+        <p className="hero-eyebrow">
+          {event.eyebrow}
+          {datePart}
         </p>
+        <h1>
+          {hero.headline.map((line, i) => (
+            <span key={i}>
+              {line}
+              {i < hero.headline.length - 1 && <br />}
+            </span>
+          ))}
+        </h1>
+        <p className="webinar-hero-sub">{hero.sub}</p>
+        {event.dateFun ? <p className="hero-date anim">{event.dateFun}</p> : null}
         <div className="webinar-hero-proof">
           <img
             src={getCDN('ross-headshots/ross%20promise%20photo.png')}
@@ -23,13 +29,11 @@ export default function WebinarHero() {
             className="webinar-hero-avatar"
           />
           <p>
-            <strong>Ross Power</strong> has trained 300+ people. Cohort 1 includes personal trainers,
-            Big 4 managing directors, political advisors, students, digital marketers, leadership coaches,
-            ex-corporate founders, and everything in between.
+            <strong>Ross Power</strong> {hero.proof}
           </p>
         </div>
-        <a href="https://replay.aipowered.xyz/" target="_blank" rel="noopener noreferrer" className="btn-white">Watch the replay</a>
-        <p className="hero-supporting">60 minutes. Real framework. Live build. Immediate value.</p>
+        <WebinarCTA className="btn-white" />
+        <p className="hero-supporting">{event.supporting}</p>
       </div>
     </section>
   )

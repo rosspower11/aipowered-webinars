@@ -1,6 +1,9 @@
 import { getCDN } from '@/lib/cdn'
+import { webinar } from '@/lib/webinar'
+import WebinarCTA from '@/components/webinar/WebinarCTA'
 
 export default function WebinarAbout() {
+  const { about } = webinar
   return (
     <section className="about">
       <div className="about-layout">
@@ -12,37 +15,23 @@ export default function WebinarAbout() {
           />
         </div>
         <div className="about-text">
-          <p className="about-eyebrow anim">Your host</p>
-          <h2 className="white anim d1">Meet Ross Power</h2>
-          <p className="anim d2">
-            Ross spent a decade building and leading product teams. 3 years at <strong>Accenture</strong> across complex projects, training as a Scrum Master and Product Manager. He then moved into startups, leading product and engineering teams in <strong>blockchain implementation</strong>, facilitating design sprints for C-Suite executives and then <strong>Head of Product</strong> at a <strong>NYSE listed company</strong>.
-          </p>
-          <p className="anim d2">
-            Having trained <strong>over 300 people</strong> in AI education, Ross now brings both together in an entirely new way. He works exclusively with <strong>Claude from Anthropic</strong> because it is the most capable AI platform for building real business systems. Using Claude as the host, he built the <strong>personal ClaudeOS</strong> framework from AI Powered.
-          </p>
-          <p className="anim d3">
-            Last week's <strong>event was the exclusive public release of the ClaudeOS from AI Powered</strong>, a new approach to learning and implementing AI with Claude. In the replay, Ross walks you through the complete framework, builds a skill live, and gives you a clear picture of what a personal OS looks like and how to start building yours.
-          </p>
+          <p className="about-eyebrow anim">{about.eyebrow}</p>
+          <h2 className="white anim d1">{about.title}</h2>
+          {about.paragraphs.map((p, i) => (
+            <p key={i} className={`anim d${Math.min(i + 2, 3)}`}>{p}</p>
+          ))}
           <div className="about-stats anim d3">
-            <div className="about-stat">
-              <div className="about-stat-n">300+</div>
-              <div className="about-stat-l">People trained</div>
-            </div>
-            <div className="about-stat">
-              <div className="about-stat-n">6</div>
-              <div className="about-stat-l">Industries</div>
-            </div>
-            <div className="about-stat">
-              <div className="about-stat-n">10yr</div>
-              <div className="about-stat-l">Product experience</div>
-            </div>
+            {about.stats.map((s) => (
+              <div key={s.l} className="about-stat">
+                <div className="about-stat-n">{s.n}</div>
+                <div className="about-stat-l">{s.l}</div>
+              </div>
+            ))}
           </div>
           <div style={{ marginTop: '32px' }} className="anim d4">
-            <a href="https://replay.aipowered.xyz/" target="_blank" rel="noopener noreferrer" className="btn-white">Watch the replay</a>
+            <WebinarCTA className="btn-white" />
           </div>
-          <p className="about-disclaimer anim d4">
-            Ross and AI Powered Group have no official affiliation with Claude or Anthropic. ClaudeOS is an independent framework designed by Ross Power.
-          </p>
+          <p className="about-disclaimer anim d4">{about.disclaimer}</p>
         </div>
       </div>
     </section>

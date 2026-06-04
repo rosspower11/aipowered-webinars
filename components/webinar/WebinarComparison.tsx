@@ -1,38 +1,33 @@
 'use client'
 
-const rows = [
-  { feature: 'Applied to your work', us: '\u2713 Built around your actual workflow', generic: '\u2717 Generic examples', diy: '\u2717 Random tutorials' },
-  { feature: 'Personal operating system', us: '\u2713 Full personal ClaudeOS installed', generic: '\u2717 Individual tips only', diy: '\u2717 No system at all' },
-  { feature: 'Tangible deliverables', us: '\u2713 Skills and SOPs you own', generic: '\u2717 Knowledge only', diy: '\u2717 Nothing standardised' },
-  { feature: 'Action-oriented', us: '\u2713 You learn by building, not watching', generic: '\u2717 Watch and take notes', diy: '\u2717 Self-paced, no accountability' },
-  { feature: 'Structured progression', us: '\u2713 Personal ClaudeOS framework (5C)', generic: '\u2717 Random topics', diy: '\u2717 No structure' },
-  { feature: 'Group momentum', us: '\u2713 Accelerator with peers', generic: '\u2717 Passive audience', diy: '\u2717 Alone' },
-  { feature: 'Capstone / proof of ROI', us: '\u2713 Present your working OS', generic: '\u2717 Certificate of completion', diy: '\u2717 No milestone' },
-]
+import { webinar } from '@/lib/webinar'
+import WebinarCTA from '@/components/webinar/WebinarCTA'
 
 function cellClass(val: string) {
-  if (val.startsWith('\u2713')) return 'comp-yes'
-  if (val.startsWith('\u2717')) return 'comp-no'
+  if (val.startsWith('\u2713') || val.startsWith('✓')) return 'comp-yes'
+  if (val.startsWith('\u2717') || val.startsWith('✗')) return 'comp-no'
   return ''
 }
 
 export default function WebinarComparison() {
+  const { comparison } = webinar
+  const [usCol, genericCol, diyCol] = comparison.columns
   return (
     <section className="comparison">
       <div className="container">
-        <p className="eyebrow anim">The difference</p>
-        <h2 className="white anim d1">Personal ClaudeOS vs. the alternatives</h2>
+        <p className="eyebrow anim">{comparison.eyebrow}</p>
+        <h2 className="white anim d1">{comparison.title}</h2>
         <table className="comp-table anim d2">
           <thead>
             <tr>
               <th></th>
-              <th className="hl">Personal ClaudeOS</th>
-              <th>Generic AI training</th>
-              <th>DIY / self-taught</th>
+              <th className="hl">{usCol}</th>
+              <th>{genericCol}</th>
+              <th>{diyCol}</th>
             </tr>
           </thead>
           <tbody>
-            {rows.map((r, i) => (
+            {comparison.rows.map((r, i) => (
               <tr key={i}>
                 <td>{r.feature}</td>
                 <td className={`hl ${cellClass(r.us)}`}>{r.us}</td>
@@ -43,7 +38,7 @@ export default function WebinarComparison() {
           </tbody>
         </table>
         <div style={{ textAlign: 'center', marginTop: '48px' }} className="anim d3">
-          <a href="https://replay.aipowered.xyz/" target="_blank" rel="noopener noreferrer" className="btn-white">Watch the replay</a>
+          <WebinarCTA className="btn-white" />
         </div>
       </div>
     </section>

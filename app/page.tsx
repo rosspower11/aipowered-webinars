@@ -4,6 +4,7 @@ import WebinarHero from '@/components/webinar/WebinarHero'
 import WebinarMarquee from '@/components/webinar/WebinarMarquee'
 import GettingAhead from '@/components/webinar/GettingAhead'
 import WhatYouLearn from '@/components/webinar/WhatYouLearn'
+import BeforeYouJoin from '@/components/webinar/BeforeYouJoin'
 import PhotoCarousel from '@/components/PhotoCarousel'
 import WebinarAbout from '@/components/webinar/WebinarAbout'
 import AcademicVsAccelerator from '@/components/webinar/AcademicVsAccelerator'
@@ -28,6 +29,7 @@ export default function Home() {
       <WebinarMarquee />
       <GettingAhead />
       <WhatYouLearn />
+      <BeforeYouJoin />
       <PhotoCarousel />
       <WebinarAbout />
       <AcademicVsAccelerator />

@@ -1,27 +1,27 @@
 import type { Metadata } from 'next'
 import './globals.css'
-
-const CDN = 'https://aipowered-assets.com'
+import { webinar } from '@/lib/webinar'
+import { getCDN } from '@/lib/cdn'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://webinar.aipowered.xyz'),
-  title: 'ClaudeOS Replay | Watch the AI Powered event from last week',
-  description: 'Great event last week. Watch the replay: the 5C framework that turns Claude from a chatbot into a business operating system, a live Skill build, and a self-assessment you can use immediately.',
+  title: webinar.meta.title,
+  description: webinar.meta.description,
   openGraph: {
-    title: 'ClaudeOS Replay | Watch the AI Powered event from last week',
-    description: 'Great event last week. Watch the replay: the 5C framework, a live Skill build, and a self-assessment you can use immediately.',
-    images: [{ url: `${CDN}/web-preview-assets/claude-team-os-social-preview.png`, width: 1200, height: 630 }],
+    title: webinar.meta.title,
+    description: webinar.meta.description,
+    images: [{ url: getCDN(webinar.meta.ogImage), width: 1200, height: 630 }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ClaudeOS Replay | Watch the AI Powered event from last week',
-    description: 'Great event last week. Watch the replay: the 5C framework, a live Skill build, and a self-assessment you can use immediately.',
-    images: [`${CDN}/web-preview-assets/claude-team-os-social-preview.png`],
+    title: webinar.meta.title,
+    description: webinar.meta.description,
+    images: [getCDN(webinar.meta.ogImage)],
   },
   icons: {
-    icon: `${CDN}/web-preview-assets/AiPowered_Submark_BlackBG_Small.jpg`,
-    apple: `${CDN}/web-preview-assets/AiPowered_Submark_BlackBG_Small.jpg`,
+    icon: `${getCDN('web-preview-assets/AiPowered_Submark_BlackBG_Small.jpg')}`,
+    apple: `${getCDN('web-preview-assets/AiPowered_Submark_BlackBG_Small.jpg')}`,
   },
 }
 
