@@ -5,318 +5,220 @@
 
 export const webinar = {
   meta: {
-    title: 'Build With Me | Free 90-Min Landing Page Session with Claude',
+    title: 'Build & Launch a Landing Page with Me (and Claude) | AI Powered Masterclass',
     description:
-      'Free live Build With Me session — 22 June, 12:30pm BST. See a landing page built and launched in real time with Claude, Cursor, GitHub, and Vercel. Not theory. Done with you.',
+      'Free live masterclass — Monday 22 June, 12:30pm BST. Watch a landing page go from blank screen to live on the internet in 90 minutes, with Claude doing the heavy lifting.',
     ogImage: 'web-preview-assets/claude-team-os-social-preview.png',
   },
 
   brand: {
     navLabel: 'AI POWERED',
-    navSuffix: '/ BUILD WITH ME',
+    navSuffix: '/ MASTERCLASS',
   },
 
   cta: {
-    label: 'Save your free spot',
+    label: 'Save my free seat',
     href: '#register',
-    navLabel: 'Save your spot · 22 June',
+    navLabel: 'Save my free seat',
+  },
+
+  cohort: {
+    label: 'Join the Cohort 3.0 waitlist and get $500 off',
+    href: 'https://claude.aipowered.xyz/',
   },
 
   event: {
-    eyebrow: 'Free done-with-me session · 90 minutes live',
-    dateLine: '22 June · 12:30pm BST',
-    dateFun:
-      'Over your lunch in the UK — dinner in Bali — or an early brekkie in the US.',
-    duration: '90 minutes',
-    supporting: "Don't just learn theory. See it done in real time — and keep up.",
+    eyebrow: 'AI Powered Masterclass | Free Live Session',
+    /** ISO 8601 — countdown shows from countdownFrom until this moment */
+    startsAt: '2026-06-22T11:30:00.000Z',
+    countdownFrom: '2026-06-19T00:00:00.000Z',
+    dateBar:
+      'Monday 22 June, 12:30pm BST. That\'s over your lunch in the UK, dinner in Bali, or an early brekkie in the US.',
+    underButton: 'Free to join, and the replay goes to everyone who registers.',
   },
 
   hero: {
     headline: [
-      'Build & launch',
-      'a landing page',
-      'with me — live.',
+      'Watch me build and launch',
+      'a landing page in 90 minutes,',
+      'live',
     ] as const,
     sub:
-      'Landing pages are how people discover your offer, trust you, and take action. As a business owner, knowing how to build one and get it live fast is leverage — not a nice-to-have. In 90 minutes we do it together: offer, style, page, code, deploy. On the internet. For real.',
-    proof:
-      'has trained 300+ people in AI. He builds every AI Powered page with Claude, Cursor, GitHub, and Vercel — the same stack you\'ll use in this session.',
+      'A free done-with-me session where you\'ll see a real landing page go from blank screen to live on the internet, with Claude doing the heavy lifting. Build along with me and keep up, or just watch and learn how it\'s done.',
   },
 
   marquee: [
-    '90-minute Build With Me',
-    '·',
-    'Free session',
+    'Free live masterclass',
     '·',
     '22 June 12:30pm BST',
+    '·',
+    '90 minutes',
     '·',
     'Claude + Cursor',
     '·',
     'GitHub + Vercel',
     '·',
-    'Live on the internet',
+    'Replay for everyone who registers',
     '·',
   ] as const,
 
   form: {
     baseUrl: 'https://links.productizeyourself.ai',
     formId: 'ZjEhdNNknUgy1WOuEnPe',
-    formName: '[Build With Me] Landing Page — 22 June',
+    formName: '[Masterclass] Landing Page — 22 June',
     inlineHeight: 675,
     popupHeight: 881,
     popupScrollPercent: 25,
-    footnote: 'Free. 90 minutes. Show up with Claude, Cursor, and GitHub ready.',
+    footnote: 'Monday 22 June, 12:30pm BST · Free · Replay included',
   },
 
-  opportunity: {
+  whyItMatters: {
     eyebrow: 'Why this matters',
-    title: 'Landing pages are how\nyour business gets found.',
-    paragraphs: [
-      'Every offer — webinar, cohort, product, service — needs a clear home on the web. Not a scattered Linktree. Not "coming soon" for three months. A proper page that explains the value and tells people what to do next.',
-      'If you\'re a business owner, learning to build and launch a landing page fast means you can test offers, fill events, and look credible without waiting on an agency or learning to code the hard way.',
-      'And right now, Claude is the best partner for this job: sharp copy, structure, styling decisions, and iteration — paired with Cursor, GitHub, and Vercel so the page is yours and it\'s live. That\'s what we build together in this session.',
+    title: 'Success in business comes down to one thing: how fast you get feedback on an idea',
+    intro:
+      'Every idea you have is a guess until someone responds to it, and a landing page with one clear CTA is the fastest, cheapest way to get that response. Here\'s why that loop matters so much.',
+    blocks: [
+      {
+        title: 'The feedback loop',
+        body: 'The speed at which you hear back from the market decides how fast you learn, and most owners wait weeks because building the page was always the bottleneck. Claude removes the bottleneck, so the loop goes from "idea, then 3 weeks of building, then feedback" to "idea this morning, live page by lunch, real answers by Friday."',
+      },
+      {
+        title: 'The expensive guess',
+        body: 'The most expensive thing in business is spending 3 months building something nobody wants, and the cheapest insurance against that is a landing page with a clear CTA. If people click, you build it, and if nobody clicks, you\'ve just saved yourself a quarter. The page costs you an afternoon, which changes the maths on every idea you have.',
+      },
+      {
+        title: 'Ideas have a shelf life',
+        body: 'Ideas are at their best the week you have them, when your energy is high and the market context is fresh. Waiting on a developer or fighting a page builder kills more good ideas than bad feedback ever will, so the faster you can build, the more ideas you actually test, and the more shots on goal you take.',
+      },
+      {
+        title: 'Real signal, not opinions',
+        body: 'Opinions from friends are free and worthless, and a stranger entering their email is the cheapest real signal you can buy. A landing page with one clear CTA is a signal-collecting machine, and once you can build one in 90 minutes, you can get a straight answer from the market whenever you need one.',
+      },
     ],
-    stats: [
-      { kind: 'text', display: '90', label: 'minutes live', detail: 'One session. Full path from offer to URL on the internet.' },
-      { kind: 'text', display: '0', label: 'theory-only modules', detail: 'You watch the build happen. Follow along if you want to keep up.' },
-      { kind: 'text', display: '1', label: 'page live', detail: 'The goal is a real deploy — not slides and "homework later."' },
-    ] as const,
+    closer:
+      'That loop, from idea to live page to real feedback, is exactly what we\'ll build in this session, end to end, in real time, with nothing pre-built and nothing hidden. If it goes wrong, you\'ll watch me fix it, because that\'s the part most tutorials cut out.',
   },
 
   learn: {
     eyebrow: "What you'll learn",
-    title: 'The full build — live, in order.',
-    intro:
-      'This is a Build With Me session. Ross does it on screen. You see every step. If you\'ve done the prep below, you can mirror it on your machine as we go.',
-    sub: 'From offer to a page that\'s live on the internet.',
+    title: 'The full journey, from offer to live URL',
+    closer:
+      'You\'ll leave with the full process in your head, and if you build along, a live page of your own.',
     items: [
       {
         title: 'Offer creation',
-        desc: 'Clarify what you\'re selling, who it\'s for, and the one action you want visitors to take — the brief everything else hangs on.',
+        desc: 'We start with what the page is actually selling, because a beautiful page for a fuzzy offer converts nobody.',
       },
       {
-        title: 'Build the style for it',
-        desc: 'Look, feel, and tone that fit your brand. Use Claude to shape direction without getting stuck in endless revisions.',
+        title: 'Style and design',
+        desc: 'We build the look of the page so it matches your brand and doesn\'t scream "template."',
       },
       {
-        title: 'Set up the page',
-        desc: 'Structure the sections that convert: hero, proof, benefits, CTA. Same patterns behind AI Powered webinar pages.',
+        title: 'Setting up the page',
+        desc: 'Structure, sections and copy, assembled in front of you.',
       },
       {
-        title: 'Using Cursor and Claude',
-        desc: 'The real workflow: prompting, editing, and iterating in Cursor with Claude as your co-builder — not copy-paste into a template builder.',
+        title: 'Cursor and Claude',
+        desc: 'How the two work together, and what to ask for so the code writes itself.',
       },
       {
-        title: 'Use GitHub for your code',
-        desc: 'Repo setup, commits, and why version control matters when you launch offers every few months.',
+        title: 'GitHub for your code',
+        desc: 'Where your code lives and why it matters, explained for normal humans.',
       },
       {
         title: 'Launch with Vercel',
-        desc: 'Connect the repo, deploy, and get a production URL — the same flow behind webinar.aipowered.xyz.',
-      },
-      {
-        title: 'Put it live on the internet',
-        desc: 'End with a link you can share. Not a preview. Not "almost done." Live.',
+        desc: 'We put it live on the internet with a real URL you can share, before the session ends.',
       },
     ],
+  },
+
+  whoFor: {
+    eyebrow: 'Who this is for',
+    title: 'Built for business owners, no engineering background needed',
+    body:
+      'If you\'re a founder, coach, consultant or anyone with an offer to sell, this session was designed for you. You don\'t need to be technical, and I\'d rather you weren\'t, because I\'m a non-technical founder myself and everything is explained in plain language. The people who get the most out of my sessions are the ones who arrive convinced they "can\'t do the code stuff" and leave with a URL.',
   },
 
   prep: {
     eyebrow: 'Before you join',
-    title: 'Come prepared — 15 minutes now saves an hour live.',
+    title: 'Set these 3 things up before the session',
     intro:
-      'You can watch without doing the setup. But if you want to build alongside Ross, get these three done before 22 June:',
+      'To build along with me on the day, you\'ll want these ready (each takes a few minutes, and I\'ll send setup instructions when you register):',
+    watchNote:
+      'If you\'d rather just watch, that\'s completely fine too — you\'ll still get the replay and everything will make sense.',
     items: [
       {
-        title: 'Claude Desktop + paid Claude account',
-        desc: 'Install the Claude desktop app and make sure you\'re on a paid plan so you can work without hitting limits mid-session.',
+        title: 'Claude desktop app with a paid Claude account',
+        desc: '',
       },
       {
-        title: 'Cursor',
-        desc: 'Download and install Cursor — that\'s where we\'ll edit the page with Claude built in.',
+        title: 'Cursor installed on your machine',
+        desc: '',
       },
       {
-        title: 'GitHub set up',
-        desc: 'Create a GitHub account if you don\'t have one. We\'ll use it to hold your code and connect to Vercel for deploy.',
+        title: 'A GitHub account, set up and signed in',
+        desc: '',
       },
-    ],
-  },
-
-  problem: {
-    eyebrow: 'The difference',
-    title: "Courses teach theory.\nThis is done with you.",
-    left: {
-      tag: 'The usual way',
-      title: 'Learn about landing pages',
-      bullets: [
-        'Watch pre-recorded modules',
-        'Take notes you never use',
-        'Still don\'t have a page live',
-        'Generic examples, not your offer',
-        '"I\'ll do it this weekend" — again',
-      ],
-    },
-    right: {
-      tag: 'Build With Me',
-      title: 'See it built in real time',
-      bullets: [
-        '90 minutes live with Ross',
-        'Offer → style → page → deploy',
-        'Claude + Cursor + GitHub + Vercel',
-        'Keep up on your machine if you prep',
-        'Leave knowing the full playbook',
-      ],
-    },
-    bottom:
-      'You don\'t need to be technical. You need to see the loop once — then rerun it for every launch.',
-  },
-
-  comparison: {
-    eyebrow: 'Why this session',
-    title: 'Build With Me vs. figuring it out alone',
-    columns: ['This session', 'DIY tutorials', 'Hire an agency'] as const,
-    rows: [
-      { feature: 'Live, with a guide', us: '✓ 90 min Build With Me', generic: '✗ Watch alone', diy: '✗ Brief and wait' },
-      { feature: 'Claude in the workflow', us: '✓ Copy, structure, build', generic: '✗ Generic AI tips', diy: '✗ You don\'t learn it' },
-      { feature: 'Cursor + GitHub + Vercel', us: '✓ Full modern stack', generic: '✗ Drag-and-drop only', diy: '✗ Opaque handoff' },
-      { feature: 'Speed to live page', us: '✓ Same session', generic: '✗ Weeks of procrastination', diy: '✗ Weeks + cost' },
-      { feature: 'Cost', us: '✓ Free', generic: '✗ Time sink', diy: '✗ £££' },
-      { feature: 'Repeat for next offer', us: '✓ Playbook you own', generic: '✗ Start from zero', diy: '✗ Pay again' },
     ],
   },
 
   about: {
-    eyebrow: 'Your host',
-    title: 'Meet Ross Power',
+    eyebrow: "Who's teaching this",
+    title: 'About Ross',
     paragraphs: [
-      'Ross spent a decade in product — Accenture, startups, Head of Product at a NYSE-listed company — and has trained 300+ people to use AI for real work.',
-      'He doesn\'t teach landing pages as theory. He ships them: Claude for thinking and copy, Cursor for building, GitHub for code, Vercel for deploy. Every AI Powered webinar page uses this stack.',
-      'On 22 June he runs a free 90-minute Build With Me session: you\'ll see a landing page go from offer to live URL, and you\'ll know exactly how to run the same play for your business.',
-    ],
-    stats: [
-      { n: '90', l: 'Minutes live' },
-      { n: '300+', l: 'People trained' },
-      { n: 'Live', l: 'Deploy on the day' },
+      'I\'m Ross, founder of AI Powered. I teach business owners to build with Claude through live programmes, and my whole approach is doing over learning: you build real things in real time, because that\'s how it actually sticks.',
+      'Over 120 people have been through my methodology across two public cohorts and a private community cohort, plus hundreds more through my live sessions, and the thing I hear most often is some version of "I didn\'t think I could build that."',
     ],
     disclaimer:
       'Ross and AI Powered are not affiliated with Anthropic. Claude is a product of Anthropic.',
   },
 
-  whoFor: {
-    eyebrow: 'Who this is for',
-    title: 'Built for business owners who need pages live',
-    cards: [
-      {
-        tag: 'Founders & solopreneurs',
-        title: 'You need a page before you can sell',
-        desc: 'You\'ve got the offer. You need a credible landing page live this month — not after another course you never finish.',
-      },
-      {
-        tag: 'Consultants & coaches',
-        title: 'You launch offers and events regularly',
-        desc: 'Each launch deserves its own page. Learning this stack means you\'re not stuck waiting on someone else every time.',
-      },
-      {
-        tag: 'Small business owners',
-        title: 'You know landing pages matter — you haven\'t shipped one',
-        desc: 'You understand why they\'re important. This session shows you how to build and launch one fast, with Claude doing the heavy lifting.',
-      },
-      {
-        tag: 'Anyone serious about Claude',
-        title: 'You should be doing this with Claude now',
-        desc: 'If you\'re still only chatting with Claude, you\'re missing the build workflow. Landing pages are the perfect first project to learn it.',
-      },
-    ],
-  },
-
-  takeaways: {
-    eyebrow: "What you'll walk away with",
-    title: 'After 90 minutes you\'ll understand',
-    items: [
-      {
-        num: '01',
-        title: 'Why landing pages matter for your business',
-        desc: 'How they drive discovery, trust, and action — and why speed to live beats perfect-later.',
-      },
-      {
-        num: '02',
-        title: 'Why Claude is the right tool for this now',
-        desc: 'Not just chat — co-building copy, structure, and style before you touch deploy.',
-      },
-      {
-        num: '03',
-        title: 'The full build sequence',
-        desc: 'Offer → style → page → Cursor + Claude → GitHub → Vercel → live on the internet.',
-      },
-      {
-        num: '04',
-        title: 'A workflow you can repeat',
-        desc: 'Next webinar, product, or cohort — same steps, new offer. No starting from zero.',
-      },
-      {
-        num: '05',
-        title: 'Confidence to keep up live',
-        desc: 'Because you saw it done in real time — not explained in a deck you\'ll watch at 2x speed later.',
-      },
-    ],
+  cohortPromo: {
+    eyebrow: 'The bigger picture',
+    title: 'This session is a taste of Cohort 3.0',
+    body:
+      'This masterclass is one slice of the Claude Accelerator, my 6 week live programme that answers the bigger question: how do I make Claude actually work for my business? It takes you through the 6 levels of ClaudeOS (Chat, Customise, Create, Connect, Code and Command), and Cohort 3.0 starts on 7 July.',
+    body2:
+      'It\'s the third time the programme has run, with over 120 people already through the methodology across two public cohorts and a private community cohort, so you\'d be joining something tried and tested rather than a first experiment.',
+    offer:
+      'Join the waitlist now and you\'ll get a $500 off coupon code as a reward, which you can use when early-bird enrolment opens on 15 June. The code brings the price from $1,500 down to $1,000, and it stops working when doors open to everyone on 22 June.',
   },
 
   finalOffer: {
-    eyebrow: '22 June · 12:30pm BST',
-    title: 'Free 90-minute Build With Me — landing page to live URL',
-    bullets: [
-      {
-        h4: 'Done with you, not theory',
-        p: 'Watch every step live. Prep Claude, Cursor, and GitHub if you want to build alongside.',
-      },
-      {
-        h4: 'The stack business owners need',
-        p: 'Claude, Cursor, GitHub, Vercel — the same tools behind AI Powered pages.',
-      },
-      {
-        h4: 'Over your lunch (wherever you are)',
-        p: 'UK lunch · Bali dinner · US early brekkie. One session, one clear outcome: a page on the internet.',
-      },
-    ],
+    title: 'One lunch break, one live landing page',
+    body:
+      'Monday 22 June, 12:30pm BST, free. Watch a landing page go from nothing to live on the internet, and leave knowing you could do it yourself.',
   },
 
   faq: [
     {
-      q: 'What happens in the 90 minutes?',
-      a: 'Ross builds a landing page live: offer creation, style, page setup, using Cursor and Claude, GitHub for code, Vercel for deploy, and putting it live on the internet. You watch and follow if you\'re set up.',
-    },
-    {
-      q: 'Is it really free?',
-      a: 'Yes. This is a free done-with-me Build With Me session. You\'ll need your own paid Claude account and free tiers for Cursor, GitHub, and Vercel to follow along.',
-    },
-    {
-      q: 'What do I need before I join?',
-      a: 'Claude Desktop with a paid Claude account, Cursor installed, and a GitHub account set up. Do this before 22 June if you want to build alongside — otherwise you can watch and set up later.',
-    },
-    {
-      q: 'Do I need to code?',
-      a: 'No traditional coding required. You\'ll use Claude in Cursor to do the building. Basic comfort following along in an editor is enough if you prep.',
-    },
-    {
-      q: 'What if I\'m in a different timezone?',
-      a: '22 June, 12:30pm BST — lunch in the UK, dinner in Bali, early morning in the US. Register and we\'ll send the join link; convert to your local time when you add to calendar.',
-    },
-    {
-      q: 'Why Claude specifically for landing pages?',
-      a: 'Claude is strong at offer positioning, copy, structure, and iteration in a build environment. Paired with Cursor and deploy tools, it\'s the fastest path from idea to live page for non-developers.',
-    },
-    {
       q: 'Will there be a replay?',
-      a: 'Register to get details. Live attendance is best if you want to ask questions and build in sync.',
+      a: 'Yes, everyone who registers gets the replay, although the live session is where you can ask questions and build along with me.',
     },
     {
-      q: 'Will you pitch other programmes?',
-      a: 'Ross may mention AI Powered cohorts for people who want ongoing support. This session is complete on its own — you leave with the full build picture.',
+      q: 'Do I need to be technical?',
+      a: 'No, and the session assumes you aren\'t. Everything is explained in plain language and Claude handles the parts that used to need an engineer.',
+    },
+    {
+      q: 'What if I can\'t set up the tools in time?',
+      a: 'Come anyway and just watch. The replay plus the setup instructions mean you can build it yourself afterwards at your own pace.',
+    },
+    {
+      q: 'Does the paid Claude account matter?',
+      a: 'Yes, you\'ll need one to build along, because the free tier won\'t keep up with what we\'re doing. If you\'re only watching, you don\'t need anything.',
+    },
+    {
+      q: 'How long is it?',
+      a: '90 minutes, designed to fit inside a long lunch. We start at 12:30pm BST sharp and the page is live before we finish.',
+    },
+    {
+      q: 'Is this a sales pitch in disguise?',
+      a: 'You\'ll build a real landing page for 90 minutes, and at the end I\'ll spend a couple of minutes telling you about Cohort 3.0 for those who want to go deeper. The session stands on its own either way.',
     },
   ],
 
   footer: {
-    tagline: 'AI Powered Build With Me by Ross Power',
+    tagline: 'AI Powered Masterclass by Ross Power',
     link: 'https://aipowered.xyz',
   },
 

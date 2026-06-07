@@ -7,18 +7,7 @@ export default function WhatYouLearn() {
     <section className="webinar-learn">
       <div className="container">
         <p className="eyebrow anim">{learn.eyebrow}</p>
-        <h2 className="white anim d1">
-          {learn.title.split('\n').map((line, i, arr) => (
-            <span key={i}>
-              {line}
-              {i < arr.length - 1 && <br />}
-            </span>
-          ))}
-        </h2>
-        <p className="sub sub-grey anim d2">{learn.intro}</p>
-        <p className="sub sub-grey anim d2" style={{ marginBottom: '8px' }}>
-          {learn.sub}
-        </p>
+        <h2 className="white anim d1">{learn.title}</h2>
         <div className="webinar-learn-grid">
           {learn.items.map((item, i) => (
             <div key={i} className={`webinar-learn-card anim d${Math.min(i + 1, 4)}`}>
@@ -30,9 +19,7 @@ export default function WhatYouLearn() {
             </div>
           ))}
         </div>
-        <div style={{ textAlign: 'center', marginTop: '48px' }} className="anim d4">
-          <WebinarCTA className="btn-white" />
-        </div>
+        <p className="learn-closer anim d4">{learn.closer}</p>
       </div>
     </section>
   )

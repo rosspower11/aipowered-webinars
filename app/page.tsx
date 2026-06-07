@@ -2,17 +2,13 @@ import ScrollAnimator from '@/components/ScrollAnimator'
 import WebinarNav from '@/components/webinar/WebinarNav'
 import WebinarHero from '@/components/webinar/WebinarHero'
 import WebinarMarquee from '@/components/webinar/WebinarMarquee'
-import GettingAhead from '@/components/webinar/GettingAhead'
+import WhyItMatters from '@/components/webinar/WhyItMatters'
 import WhatYouLearn from '@/components/webinar/WhatYouLearn'
-import BeforeYouJoin from '@/components/webinar/BeforeYouJoin'
 import PhotoCarousel from '@/components/PhotoCarousel'
-import WebinarAbout from '@/components/webinar/WebinarAbout'
-import AcademicVsAccelerator from '@/components/webinar/AcademicVsAccelerator'
-import WebinarComparison from '@/components/webinar/WebinarComparison'
-import DruckerQuote from '@/components/webinar/DruckerQuote'
 import WebinarWhoFor from '@/components/webinar/WebinarWhoFor'
-import WorkshopCarousel from '@/components/WorkshopCarousel'
-import WhatYoullGet from '@/components/webinar/WhatYoullGet'
+import BeforeYouJoin from '@/components/webinar/BeforeYouJoin'
+import WebinarAbout from '@/components/webinar/WebinarAbout'
+import CohortPromo from '@/components/webinar/CohortPromo'
 import Testimonials from '@/components/webinar/Testimonials'
 import WebinarFAQ from '@/components/webinar/WebinarFAQ'
 import FinalOffer from '@/components/webinar/FinalOffer'
@@ -27,17 +23,13 @@ export default function Home() {
       <WebinarNav />
       <WebinarHero />
       <WebinarMarquee />
-      <GettingAhead />
+      <WhyItMatters />
       <WhatYouLearn />
-      <BeforeYouJoin />
       <PhotoCarousel />
-      <WebinarAbout />
-      <AcademicVsAccelerator />
-      <WebinarComparison />
-      <DruckerQuote />
       <WebinarWhoFor />
-      <WorkshopCarousel />
-      <WhatYoullGet />
+      <BeforeYouJoin />
+      <WebinarAbout />
+      <CohortPromo />
       <Testimonials />
       <WebinarFAQ />
       <FinalOffer />

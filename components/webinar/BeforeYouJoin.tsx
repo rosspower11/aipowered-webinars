@@ -4,24 +4,24 @@ import WebinarCTA from '@/components/webinar/WebinarCTA'
 export default function BeforeYouJoin() {
   const { prep } = webinar
   return (
-    <section className="who-section webinar-prep">
-      <div className="container">
-        <p className="eyebrow anim" style={{ color: 'var(--text-dark-grey)' }}>{prep.eyebrow}</p>
-        <h2 className="dark anim d1">{prep.title}</h2>
-        <p className="sub anim d2" style={{ maxWidth: '640px', marginBottom: '40px', color: 'var(--text-dark-grey)' }}>
+    <section className="webinar-prep-section">
+      <div className="container-narrow">
+        <p className="eyebrow anim">{prep.eyebrow}</p>
+        <h2 className="white anim d1">{prep.title}</h2>
+        <p className="sub sub-grey anim d2" style={{ marginBottom: '32px' }}>
           {prep.intro}
         </p>
-        <div className="who-grid">
+        <ol className="prep-list anim d3">
           {prep.items.map((item, i) => (
-            <div key={i} className={`who-card anim d${Math.min(i + 1, 4)}`}>
-              <p className="who-card-tag">Step {i + 1}</p>
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-            </div>
+            <li key={i}>
+              <span className="prep-num">{i + 1}</span>
+              <span>{item.title}</span>
+            </li>
           ))}
-        </div>
-        <div style={{ textAlign: 'center', marginTop: '48px' }} className="anim d4">
-          <WebinarCTA className="btn-dark" />
+        </ol>
+        <p className="prep-watch anim d3">{prep.watchNote}</p>
+        <div style={{ textAlign: 'center', marginTop: '40px' }} className="anim d4">
+          <WebinarCTA className="btn-white" />
         </div>
       </div>
     </section>
