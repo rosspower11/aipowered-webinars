@@ -5,13 +5,11 @@ import WebinarMarquee from '@/components/webinar/WebinarMarquee'
 import WhyItMatters from '@/components/webinar/WhyItMatters'
 import WhatYouLearn from '@/components/webinar/WhatYouLearn'
 import PhotoCarousel from '@/components/PhotoCarousel'
-import WebinarWhoFor from '@/components/webinar/WebinarWhoFor'
-import BeforeYouJoin from '@/components/webinar/BeforeYouJoin'
+import AudiencePrep from '@/components/webinar/AudiencePrep'
 import WebinarAbout from '@/components/webinar/WebinarAbout'
 import CohortPromo from '@/components/webinar/CohortPromo'
-import Testimonials from '@/components/webinar/Testimonials'
 import WebinarFAQ from '@/components/webinar/WebinarFAQ'
-import FinalOffer from '@/components/webinar/FinalOffer'
+import FinalCTA from '@/components/webinar/FinalCTA'
 import Disclaimer from '@/components/webinar/Disclaimer'
 import WebinarFooter from '@/components/webinar/WebinarFooter'
 import BackToTop from '@/components/BackToTop'
@@ -26,13 +24,11 @@ export default function Home() {
       <WhyItMatters />
       <WhatYouLearn />
       <PhotoCarousel />
-      <WebinarWhoFor />
-      <BeforeYouJoin />
+      <AudiencePrep />
       <WebinarAbout />
       <CohortPromo />
-      <Testimonials />
       <WebinarFAQ />
-      <FinalOffer />
+      <FinalCTA />
       <Disclaimer />
       <WebinarFooter />
       <BackToTop />

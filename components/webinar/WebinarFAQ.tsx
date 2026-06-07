@@ -21,6 +21,9 @@ export default function WebinarFAQ() {
             </div>
           ))}
         </div>
+        <div className="section-cta anim d3">
+          <a href="#register" className="btn-white">Save my free seat</a>
+        </div>
       </div>
     </section>
   )

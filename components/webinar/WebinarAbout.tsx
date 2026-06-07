@@ -4,7 +4,7 @@ import { webinar } from '@/lib/webinar'
 export default function WebinarAbout() {
   const { about } = webinar
   return (
-    <section className="about">
+    <section className="about about-compact">
       <div className="about-layout">
         <div className="about-photo">
           <img
@@ -14,12 +14,9 @@ export default function WebinarAbout() {
           />
         </div>
         <div className="about-text">
-          <p className="about-eyebrow anim">{about.eyebrow}</p>
-          <h2 className="white anim d1">{about.title}</h2>
-          {about.paragraphs.map((p, i) => (
-            <p key={i} className={`anim d${Math.min(i + 2, 3)}`}>{p}</p>
-          ))}
-          <p className="about-disclaimer anim d4">{about.disclaimer}</p>
+          <h2 className="white anim">{about.title}</h2>
+          <p className="anim d1">{about.body}</p>
+          <p className="about-disclaimer anim d2">{about.disclaimer}</p>
         </div>
       </div>
     </section>
