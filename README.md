@@ -4,7 +4,7 @@ Landing pages for live webinars and masterclasses. **Production:** [webinar.aipo
 
 ## Edit the live site
 
-1. Open **`lib/webinar.ts`** — all copy, dates, CTAs, and form IDs live here.
+1. Open **`lib/webinar.ts`**. All copy, dates, CTAs, and form IDs live here.
 2. Preview locally:
 
    ```bash
@@ -14,7 +14,7 @@ Landing pages for live webinars and masterclasses. **Production:** [webinar.aipo
 
    Open [http://localhost:3000](http://localhost:3000).
 
-3. Push to GitHub `main` — Vercel rebuilds production (usually under 2 minutes).
+3. Push to GitHub `main`. Vercel rebuilds production (usually under 2 minutes).
 
 ```bash
 git add lib/webinar.ts   # and any component changes
@@ -54,6 +54,6 @@ npx vercel env pull   # if you add env vars later
 
 ## Current event
 
-**Build With Me — 90 min live landing page session · 22 June 12:30pm BST**
+**Build With Me: 90 min live landing page session · 22 June 12:30pm BST**
 
 Free done-with-me session. Prep: Claude Desktop (paid), Cursor, GitHub.
