@@ -103,7 +103,9 @@ h3{font-size:20px;font-weight:700;letter-spacing:-0.3px;margin-bottom:10px;}
 .about{background:var(--bg-black);padding:100px 48px;}
 .about-layout{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.5fr;gap:56px;align-items:start;}
 .about-photo{width:100%;aspect-ratio:3/4;background:var(--bg-charcoal);border:1px dashed rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:13px;text-align:center;padding:20px;position:relative;overflow:hidden;}
-.about-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:20px;font-weight:700;}
+.about-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;font-weight:700;}
+.about-photo-col{display:flex;flex-direction:column;gap:12px;}
+.about-photo-caption{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--white);text-align:center;font-weight:700;}
 .about-text p{font-size:16px;color:var(--text-grey);line-height:1.8;margin-bottom:18px;}
 .about-text strong{color:var(--white);}
 .about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px;padding-top:32px;border-top:1px solid var(--border-dark);}
@@ -194,14 +196,6 @@ footer em{font-style:italic;}
 .prep-compact li{font-size:15px;color:var(--text-black);padding-left:20px;position:relative;line-height:1.5;}
 .prep-compact li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--text-black);}
 .prep-watch{font-size:14px;color:var(--text-dark-grey);font-style:italic;line-height:1.5;}
-
-/* ─── ABOUT LIGHT ─── */
-.about-light{background:var(--bg-light);color:var(--text-black);padding:72px 48px;}
-.about-light .about-text p{color:var(--text-dark-grey);}
-.about-light .about-disclaimer{color:var(--text-dark-grey);}
-.about-light .about-eyebrow{color:var(--text-dark-grey);}
-.about-photo-col{display:flex;flex-direction:column;gap:12px;}
-.about-photo-caption{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dark-grey);text-align:center;font-weight:700;}
 
 /* ─── COHORT PROMO ─── */
 .cohort-promo{background:var(--bg-black);padding:72px 48px;border-top:1px solid var(--border-dark);}
@@ -342,7 +336,7 @@ footer em{font-style:italic;}
   .why-grid{grid-template-columns:1fr;}
   .webinar-learn{padding:56px 24px;}
   .audience-section{padding:56px 24px;}
-  .about-light{padding:56px 24px;}
+  .about{padding:56px 24px;}
   .cohort-promo{padding:56px 24px;}
   .final-cta{padding:56px 24px;}
   .faq{padding:56px 24px!important;}

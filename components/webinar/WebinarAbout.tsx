@@ -4,7 +4,7 @@ import { webinar } from '@/lib/webinar'
 export default function WebinarAbout() {
   const { about } = webinar
   return (
-    <section className="about about-light">
+    <section className="about">
       <div className="about-layout">
         <div className="about-photo-col">
           <div className="about-photo">
@@ -20,7 +20,7 @@ export default function WebinarAbout() {
         </div>
         <div className="about-text">
           <p className="about-eyebrow anim">{about.eyebrow}</p>
-          <h2 className="dark anim d1">{about.title}</h2>
+          <h2 className="white anim d1">{about.title}</h2>
           {about.paragraphs.map((p, i) => (
             <p key={i} className={`anim d${Math.min(i + 2, 4)}`}>{p}</p>
           ))}
