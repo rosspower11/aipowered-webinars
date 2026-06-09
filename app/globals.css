@@ -18,6 +18,8 @@
   --text-black:#0A0A0A;
   --text-muted:rgba(255,255,255,0.35);
   --accent:#9BB0C4;
+  --accent-faint:rgba(155,176,196,0.12);
+  --accent-glow:rgba(155,176,196,0.55);
   --sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
   --serif:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;
   --mono:'JetBrains Mono',monospace;
@@ -100,12 +102,12 @@ h3{font-size:20px;font-weight:700;letter-spacing:-0.3px;margin-bottom:10px;}
 .who-card p{font-size:14px;color:var(--text-dark-grey);line-height:1.7;}
 
 /* ─── ABOUT (dark split) ─── */
-.about{background:var(--bg-black);padding:100px 48px;}
+.about{background:var(--bg-charcoal);padding:100px 48px;border-top:1px solid var(--accent-faint);border-bottom:1px solid var(--accent-faint);}
 .about-layout{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.5fr;gap:56px;align-items:start;}
 .about-photo{width:100%;aspect-ratio:3/4;background:var(--bg-charcoal);border:1px dashed rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:13px;text-align:center;padding:20px;position:relative;overflow:hidden;}
-.about-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;font-weight:700;}
+.about-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:20px;font-weight:700;}
 .about-photo-col{display:flex;flex-direction:column;gap:12px;}
-.about-photo-caption{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--white);text-align:center;font-weight:700;}
+.about-photo-caption{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);text-align:center;font-weight:700;}
 .about-text p{font-size:16px;color:var(--text-grey);line-height:1.8;margin-bottom:18px;}
 .about-text strong{color:var(--white);}
 .about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px;padding-top:32px;border-top:1px solid var(--border-dark);}
@@ -151,23 +153,24 @@ footer em{font-style:italic;}
 .webinar-hero h1{display:flex;flex-direction:column;gap:8px;margin-bottom:20px;}
 .hero-line{display:block;font-family:var(--serif);font-size:clamp(32px,4.5vw,52px);font-weight:700;line-height:1.12;letter-spacing:-1.5px;color:var(--white);text-wrap:balance;}
 .hero-line-sub{margin-top:10px;font-size:clamp(20px,2.8vw,28px);font-weight:600;color:var(--accent);letter-spacing:-0.5px;}
-.hero-countdown-live .hero-countdown-label{color:var(--accent);}
 .webinar-hero-sub{font-size:17px;color:var(--text-grey);line-height:1.65;margin-bottom:16px;text-wrap:pretty;}
-.hero-date{font-size:14px;color:var(--text-grey);line-height:1.5;margin-bottom:8px;}
-.hero-date strong{color:var(--white);font-weight:600;}
-.hero-date-sep{color:var(--text-muted);}
+.hero-date{font-size:clamp(15px,2.2vw,17px);color:var(--text-grey);line-height:1.55;margin-bottom:12px;}
+.hero-date strong{font-family:var(--serif);font-size:clamp(20px,3.2vw,26px);color:var(--white);font-weight:700;letter-spacing:-0.3px;display:block;margin-bottom:4px;}
+.hero-date span{display:block;font-size:clamp(14px,2vw,16px);color:var(--text-grey);}
 .hero-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;list-style:none;margin:14px 0 0;padding:0;}
 .hero-trust li{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);}
 .hero-trust li::before{content:'✓ ';color:var(--accent);}
 .hero-register{max-width:480px;margin:0 auto;padding-top:0;}
 .hero-supporting{margin-top:10px;}
-.hero-countdown{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 14px;margin:0 auto 8px;padding:12px 20px;border:1px solid rgba(155,176,196,0.35);border-radius:8px;max-width:400px;background:rgba(155,176,196,0.06);}
-.hero-countdown-label{font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);width:100%;text-align:center;font-weight:700;}
-.hero-countdown-units{display:flex;align-items:center;gap:8px;}
-.hero-countdown-unit{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:40px;}
-.hero-countdown-num{font-family:var(--mono);font-size:26px;font-weight:700;color:var(--white);}
-.hero-countdown-lbl{font-family:var(--mono);font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);}
-.hero-countdown-sep{font-family:var(--mono);font-size:16px;color:var(--text-muted);padding-bottom:10px;}
+.webinar-countdown{margin:0 auto 14px;padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 18px;font-family:var(--mono);border-top:1px solid var(--accent-faint);border-bottom:1px solid var(--accent-faint);max-width:640px;}
+.countdown-dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent-glow);animation:countdownPulse 1.4s ease-in-out infinite;flex-shrink:0;}
+@keyframes countdownPulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.45;transform:scale(0.8);}}
+.countdown-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.4);white-space:nowrap;}
+.countdown-units{display:flex;align-items:center;gap:12px;}
+.countdown-unit{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:34px;}
+.cd-num{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--white);line-height:1;letter-spacing:0.5px;}
+.cd-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.32);}
+.cd-sep{color:rgba(255,255,255,0.2);font-size:18px;font-weight:300;line-height:1;padding-bottom:12px;}
 .section-cta{text-align:center;margin-top:36px;}
 
 /* ─── WHY (condensed) ─── */
@@ -329,8 +332,12 @@ footer em{font-style:italic;}
   .ahead-bottom{font-size:18px;margin-top:36px;}
   .webinar-hero{padding:88px 24px 56px;}
   .hero-line{font-size:clamp(28px,7vw,40px);}
-  .hero-date{margin-bottom:4px;}
-  .hero-countdown{margin-bottom:6px;padding:10px 16px;}
+  .hero-date{margin-bottom:8px;}
+  .hero-date strong{font-size:clamp(18px,5vw,22px);}
+  .webinar-countdown{gap:10px 14px;padding:12px 16px;}
+  .countdown-label{font-size:9px;letter-spacing:2px;white-space:normal;text-align:center;max-width:140px;}
+  .cd-num{font-size:18px;}
+  .countdown-units{gap:8px;}
   .hero-register{margin-top:0;}
   .why-section{padding:56px 24px;}
   .why-grid{grid-template-columns:1fr;}

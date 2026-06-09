@@ -3,15 +3,12 @@
 import { useEffect, useState } from 'react'
 import { webinar } from '@/lib/webinar'
 
-type TL = { show: boolean; done: boolean; d: number; h: number; m: number; s: number }
+type TL = { done: boolean; d: number; h: number; m: number; s: number }
 
-function getTimeLeft(target: number, showFrom: number): TL {
-  const now = Date.now()
-  if (now < showFrom) return { show: false, done: false, d: 0, h: 0, m: 0, s: 0 }
-  const diff = target - now
-  if (diff <= 0) return { show: true, done: true, d: 0, h: 0, m: 0, s: 0 }
+function getTimeLeft(target: number): TL {
+  const diff = target - Date.now()
+  if (diff <= 0) return { done: true, d: 0, h: 0, m: 0, s: 0 }
   return {
-    show: true,
     done: false,
     d: Math.floor(diff / 86_400_000),
     h: Math.floor((diff / 3_600_000) % 24),
@@ -24,50 +21,50 @@ const pad = (n: number) => String(n).padStart(2, '0')
 
 export default function WebinarCountdown() {
   const target = new Date(webinar.event.startsAt).getTime()
-  const showFrom = new Date(webinar.event.countdownFrom).getTime()
   const [tl, setTl] = useState<TL | null>(null)
 
   useEffect(() => {
-    const tick = () => setTl(getTimeLeft(target, showFrom))
+    const tick = () => setTl(getTimeLeft(target))
     tick()
     const id = setInterval(tick, 1000)
     return () => clearInterval(id)
-  }, [target, showFrom])
+  }, [target])
 
-  if (!tl?.show) return null
-
-  if (tl.done) {
-    return (
-      <div className="hero-countdown hero-countdown-live anim">
-        <span className="hero-countdown-label">Session is live soon</span>
-      </div>
-    )
-  }
+  const d = tl ? pad(tl.d) : '00'
+  const h = tl ? pad(tl.h) : '00'
+  const m = tl ? pad(tl.m) : '00'
+  const s = tl ? pad(tl.s) : '00'
+  const done = tl?.done ?? false
 
   return (
-    <div className="hero-countdown anim">
-      <span className="hero-countdown-label">Starts in</span>
-      <div className="hero-countdown-units">
-        <div className="hero-countdown-unit">
-          <span className="hero-countdown-num">{pad(tl.d)}</span>
-          <span className="hero-countdown-lbl">Days</span>
+    <div className="webinar-countdown anim">
+      <div className="countdown-dot" />
+      <span className="countdown-label">
+        {done ? 'Session starting now' : webinar.event.countdownLabel}
+      </span>
+      {!done && (
+        <div className="countdown-units">
+          <div className="countdown-unit">
+            <div className="cd-num">{d}</div>
+            <div className="cd-lbl">Days</div>
+          </div>
+          <div className="cd-sep">:</div>
+          <div className="countdown-unit">
+            <div className="cd-num">{h}</div>
+            <div className="cd-lbl">Hours</div>
+          </div>
+          <div className="cd-sep">:</div>
+          <div className="countdown-unit">
+            <div className="cd-num">{m}</div>
+            <div className="cd-lbl">Mins</div>
+          </div>
+          <div className="cd-sep">:</div>
+          <div className="countdown-unit">
+            <div className="cd-num">{s}</div>
+            <div className="cd-lbl">Secs</div>
+          </div>
         </div>
-        <span className="hero-countdown-sep">:</span>
-        <div className="hero-countdown-unit">
-          <span className="hero-countdown-num">{pad(tl.h)}</span>
-          <span className="hero-countdown-lbl">Hrs</span>
-        </div>
-        <span className="hero-countdown-sep">:</span>
-        <div className="hero-countdown-unit">
-          <span className="hero-countdown-num">{pad(tl.m)}</span>
-          <span className="hero-countdown-lbl">Min</span>
-        </div>
-        <span className="hero-countdown-sep">:</span>
-        <div className="hero-countdown-unit">
-          <span className="hero-countdown-num">{pad(tl.s)}</span>
-          <span className="hero-countdown-lbl">Sec</span>
-        </div>
-      </div>
+      )}
     </div>
   )
 }

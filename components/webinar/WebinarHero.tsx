@@ -3,7 +3,7 @@ import WebinarCountdown from '@/components/webinar/WebinarCountdown'
 import WebinarForm from '@/components/webinar/WebinarForm'
 
 export default function WebinarHero() {
-  const { event, hero, form } = webinar
+  const { event, hero } = webinar
   return (
     <section className="webinar-hero">
       <div className="webinar-hero-inner">
@@ -19,11 +19,10 @@ export default function WebinarHero() {
 
         <p className="webinar-hero-sub anim d2">{hero.sub}</p>
 
-        <p className="hero-date anim d2">
+        <div className="hero-date anim d2">
           <strong>{event.dateLine}</strong>
-          <span className="hero-date-sep"> · </span>
-          {event.dateNote}
-        </p>
+          <span>{event.dateNote}</span>
+        </div>
 
         <WebinarCountdown />
 
