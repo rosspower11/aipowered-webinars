@@ -29,7 +29,6 @@ export default function WebinarHero() {
 
         <div className="hero-register anim d3" id="register">
           <WebinarForm />
-          <p className="hero-form-note">{form.footnote}</p>
           <p className="hero-supporting">{event.underButton}</p>
           <ul className="hero-trust">
             {event.trustBar.map((item) => (

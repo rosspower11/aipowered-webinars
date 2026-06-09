@@ -55,8 +55,7 @@ export const webinar = {
     baseUrl: 'https://links.productizeyourself.ai',
     formId: 'ZjEhdNNknUgy1WOuEnPe',
     formName: '[Build With Me] Landing Page, 22 June',
-    inlineHeight: 520,
-    footnote: 'First name + email. That\'s it.',
+    inlineHeight: 240,
   },
 
   whyItMatters: {
