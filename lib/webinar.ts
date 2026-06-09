@@ -22,11 +22,6 @@ export const webinar = {
     navLabel: 'Save my free seat',
   },
 
-  cohort: {
-    label: 'Join the Cohort 3.0 waitlist and get $500 off',
-    href: 'https://claude.aipowered.xyz/',
-  },
-
   event: {
     eyebrow: 'Free AI Powered Masterclass',
     eyebrowSub: 'Build With Me Session',
@@ -134,12 +129,6 @@ export const webinar = {
       'Oh, and I built this entire landing page with Claude (you\'ll be able to as well... my promise).',
     ],
     disclaimer: 'AI Powered is not affiliated with Anthropic. Claude is a product of Anthropic.',
-  },
-
-  cohortPromo: {
-    title: 'This session is a taste of Cohort 3.0',
-    body:
-      'The Claude Accelerator: 6 weeks, 6 levels of ClaudeOS, starts 7 July. Third cohort. 120+ through the methodology already. Join the waitlist for a $500 off code (early-bird opens 15 June, $1,500 → $1,000; code expires when doors open to everyone on 22 June).',
   },
 
   faq: [

@@ -7,7 +7,6 @@ import WhatYouLearn from '@/components/webinar/WhatYouLearn'
 import PhotoCarousel from '@/components/PhotoCarousel'
 import AudiencePrep from '@/components/webinar/AudiencePrep'
 import WebinarAbout from '@/components/webinar/WebinarAbout'
-import CohortPromo from '@/components/webinar/CohortPromo'
 import WebinarFAQ from '@/components/webinar/WebinarFAQ'
 import FinalCTA from '@/components/webinar/FinalCTA'
 import Disclaimer from '@/components/webinar/Disclaimer'
@@ -26,7 +25,6 @@ export default function Home() {
       <PhotoCarousel />
       <AudiencePrep />
       <WebinarAbout />
-      <CohortPromo />
       <WebinarFAQ />
       <FinalCTA />
       <Disclaimer />
