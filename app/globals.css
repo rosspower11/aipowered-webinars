@@ -150,17 +150,18 @@ footer em{font-style:italic;}
 .hero-line{display:block;font-family:var(--serif);font-size:clamp(32px,4.5vw,52px);font-weight:700;line-height:1.12;letter-spacing:-1.5px;color:var(--white);text-wrap:balance;}
 .hero-line-sub{margin-top:10px;font-size:clamp(20px,2.8vw,28px);font-weight:600;color:var(--accent);letter-spacing:-0.5px;}
 .hero-countdown-live .hero-countdown-label{color:var(--accent);}
-.webinar-hero-sub{font-size:17px;color:var(--text-grey);line-height:1.65;margin-bottom:24px;text-wrap:pretty;}
-.hero-meta{margin-bottom:32px;}
-.hero-date{font-size:14px;color:var(--text-grey);line-height:1.5;margin-bottom:16px;}
+.webinar-hero-sub{font-size:17px;color:var(--text-grey);line-height:1.65;margin-bottom:16px;text-wrap:pretty;}
+.hero-date{font-size:14px;color:var(--text-grey);line-height:1.5;margin-bottom:12px;}
 .hero-date strong{color:var(--white);font-weight:600;}
 .hero-date-sep{color:var(--text-muted);}
-.hero-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;list-style:none;margin:16px 0 0;padding:0;}
+.hero-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;list-style:none;margin:14px 0 0;padding:0;}
 .hero-trust li{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);}
 .hero-trust li::before{content:'✓ ';color:var(--accent);}
-.hero-register{max-width:480px;margin:0 auto;padding-top:8px;}
+.hero-register{max-width:480px;margin:0 auto;padding-top:0;}
+.hero-form-note{margin-top:10px;}
+.hero-supporting{margin-top:10px;}
 .hero-form-note{margin-top:12px;font-size:12px;color:var(--text-muted);}
-.hero-countdown{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 16px;margin:20px auto 12px;padding:16px 24px;border:1px solid rgba(155,176,196,0.35);border-radius:8px;max-width:400px;background:rgba(155,176,196,0.06);}
+.hero-countdown{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 14px;margin:0 auto 14px;padding:12px 20px;border:1px solid rgba(155,176,196,0.35);border-radius:8px;max-width:400px;background:rgba(155,176,196,0.06);}
 .hero-countdown-label{font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);width:100%;text-align:center;font-weight:700;}
 .hero-countdown-units{display:flex;align-items:center;gap:8px;}
 .hero-countdown-unit{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:40px;}

@@ -19,24 +19,23 @@ export default function WebinarHero() {
 
         <p className="webinar-hero-sub anim d2">{hero.sub}</p>
 
-        <div className="hero-meta anim d2">
-          <p className="hero-date">
-            <strong>{event.dateLine}</strong>
-            <span className="hero-date-sep"> · </span>
-            {event.dateNote}
-          </p>
-          <WebinarCountdown />
-          <ul className="hero-trust">
-            {event.trustBar.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
+        <p className="hero-date anim d2">
+          <strong>{event.dateLine}</strong>
+          <span className="hero-date-sep"> · </span>
+          {event.dateNote}
+        </p>
+
+        <WebinarCountdown />
 
         <div className="hero-register anim d3" id="register">
           <WebinarForm />
           <p className="hero-form-note">{form.footnote}</p>
           <p className="hero-supporting">{event.underButton}</p>
+          <ul className="hero-trust">
+            {event.trustBar.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

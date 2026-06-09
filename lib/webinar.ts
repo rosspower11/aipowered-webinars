@@ -56,8 +56,6 @@ export const webinar = {
     formId: 'ZjEhdNNknUgy1WOuEnPe',
     formName: '[Build With Me] Landing Page, 22 June',
     inlineHeight: 520,
-    popupHeight: 881,
-    popupScrollPercent: 25,
     footnote: 'First name + email. That\'s it.',
   },
 
