@@ -28,9 +28,10 @@ export const webinar = {
   },
 
   event: {
-    eyebrow: 'AI Powered Masterclass · Free Build With Me Session',
+    eyebrow: 'Free AI Powered Masterclass',
+    eyebrowSub: 'Build With Me Session',
     startsAt: '2026-06-22T11:30:00.000Z',
-    countdownFrom: '2026-06-19T00:00:00.000Z',
+    countdownFrom: '2026-01-01T00:00:00.000Z',
     dateLine: 'Monday 22 June · 12:30pm BST',
     dateNote: 'UK lunch · Bali dinner · US early brekkie',
     underButton: 'Free to join. Replay sent to everyone who registers.',
@@ -38,11 +39,10 @@ export const webinar = {
   },
 
   hero: {
-    /** Two complete lines only. Never break mid-phrase. */
-    line1: 'Build With Me (and Claude)',
-    line2: 'Launch a landing page live in 90 minutes',
+    line1: 'Launch a landing page live in 90 minutes',
+    line2: 'Build With Me (and Claude)',
     sub:
-      'A free done-with-me session. Blank screen → live URL on the internet. Claude does the heavy lifting. Build alongside me and keep up, or watch and run the playbook yourself after.',
+      'A free done-with-me session. You\'ll watch a real page go from nothing to live on the internet, with Claude doing the heavy lifting. Build alongside me and keep up, or just watch and run the playbook yourself after.',
   },
 
   marquee: [
@@ -123,9 +123,16 @@ export const webinar = {
   },
 
   about: {
-    title: 'Who\'s teaching this',
-    body:
-      'I\'m Ross, founder of AI Powered. I teach business owners to build with Claude through live programmes, doing over learning. 120+ people through two public cohorts plus a private community cohort. The line I hear most: "I didn\'t think I could build that."',
+    eyebrow: 'About me',
+    title: 'Meet Ross.',
+    photoCaption: 'AI Founder & Educator',
+    paragraphs: [
+      'Years before any of this started, I worked at Accenture, one of the largest tech consulting companies in the world, training in design thinking and workshop facilitation.',
+      'Across the short time I was there I ran well over 100 workshops and presented to more than 1,000 individuals along the way. My "one thing" through all of it was making tech and business simple and accessible to people, which is something I\'ve always loved doing and always wanted to turn into some kind of business of my own.',
+      'I moved into startups (yes, I was a full techbro), leading product and engineering teams in blockchain, facilitating design sprints for C-suite executives, and most recently as Head of Product at a NYSE-listed education company.',
+      'This programme is the result of everything I\'ve learnt, now translated for learning AI: prompts, skills, plugins, automations and workflows that I use myself to run my business.',
+      'Oh, and I built this entire landing page with Claude (you\'ll be able to as well... my promise).',
+    ],
     disclaimer: 'AI Powered is not affiliated with Anthropic. Claude is a product of Anthropic.',
   },
 

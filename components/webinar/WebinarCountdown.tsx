@@ -34,11 +34,19 @@ export default function WebinarCountdown() {
     return () => clearInterval(id)
   }, [target, showFrom])
 
-  if (!tl?.show || tl.done) return null
+  if (!tl?.show) return null
+
+  if (tl.done) {
+    return (
+      <div className="hero-countdown hero-countdown-live anim">
+        <span className="hero-countdown-label">Session is live soon</span>
+      </div>
+    )
+  }
 
   return (
     <div className="hero-countdown anim">
-      <span className="hero-countdown-label">Session starts in</span>
+      <span className="hero-countdown-label">Starts in</span>
       <div className="hero-countdown-units">
         <div className="hero-countdown-unit">
           <span className="hero-countdown-num">{pad(tl.d)}</span>

@@ -7,11 +7,14 @@ export default function WebinarHero() {
   return (
     <section className="webinar-hero">
       <div className="webinar-hero-inner">
-        <p className="hero-eyebrow anim">{event.eyebrow}</p>
+        <div className="hero-eyebrow-wrap anim">
+          <p className="hero-eyebrow">{event.eyebrow}</p>
+          <p className="hero-eyebrow-sub">{event.eyebrowSub}</p>
+        </div>
 
         <h1 className="anim d1">
-          <span className="hero-line hero-line-accent">{hero.line1}</span>
-          <span className="hero-line">{hero.line2}</span>
+          <span className="hero-line">{hero.line1}</span>
+          <span className="hero-line hero-line-sub">{hero.line2}</span>
         </h1>
 
         <p className="webinar-hero-sub anim d2">{hero.sub}</p>
