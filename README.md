@@ -54,6 +54,6 @@ npx vercel env pull   # if you add env vars later
 
 ## Current event
 
-**Build With Me: 90 min live landing page session · 22 June 12:30pm BST**
+**Build With Me: 90 min live landing page session · 30 June 12:30pm BST**
 
 Free done-with-me session. Prep: Claude Desktop (paid), Cursor, GitHub.

@@ -5,9 +5,9 @@
 
 export const webinar = {
   meta: {
-    title: 'Build With Me (and Claude) | Free Landing Page Session, 22 June',
+    title: 'Build With Me (and Claude) | Free Landing Page Session, 30 June',
     description:
-      'Free 90-minute Build With Me session. Launch a landing page live with Claude, Cursor, GitHub & Vercel. Monday 22 June, 12:30pm BST. Replay included.',
+      'Free 90-minute Build With Me session. Launch a landing page live with Claude, Cursor, GitHub & Vercel. Tuesday 30 June, 12:30pm BST. Replay included.',
     ogImage: 'web-preview-assets/claude-team-os-social-preview.png',
   },
 
@@ -25,10 +25,10 @@ export const webinar = {
   event: {
     eyebrow: 'Free AI Powered Masterclass',
     eyebrowSub: 'Build With Me Session',
-    startsAt: '2026-06-22T11:30:00.000Z',
-    dateLine: 'Monday 22 June · 12:30pm BST',
+    startsAt: '2026-06-30T11:30:00.000Z',
+    dateLine: 'Tuesday 30 June · 12:30pm BST',
     dateNote: 'UK lunch · Bali dinner · US early brekkie',
-    countdownLabel: 'Webinar starts · 12:30 BST · 22 June',
+    countdownLabel: 'Webinar starts · 12:30 BST · 30 June',
     underButton: 'Free to join. Replay sent to everyone who registers.',
     trustBar: ['120+ trained', '90 minutes live', 'Replay included', '100% free'],
   },
@@ -43,7 +43,7 @@ export const webinar = {
   marquee: [
     'Build With Me',
     '·',
-    '22 June 12:30pm BST',
+    '30 June 12:30pm BST',
     '·',
     'Idea to live page in one session',
     '·',
@@ -54,7 +54,7 @@ export const webinar = {
   form: {
     baseUrl: 'https://links.productizeyourself.ai',
     formId: 'ZjEhdNNknUgy1WOuEnPe',
-    formName: '[Build With Me] Landing Page, 22 June',
+    formName: '[Build With Me] Landing Page, 30 June',
     inlineHeight: 240,
   },
 
